@@ -1,11 +1,10 @@
 /*Structure*/
 body{
-    background:skyblue;
+    background:rgb(251, 243, 233);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*Navigation*/
-
-/*Tables*/
-
 /*Typography*/
+h1{
+    color:burlywood;
+}
