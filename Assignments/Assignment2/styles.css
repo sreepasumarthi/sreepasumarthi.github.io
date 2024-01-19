@@ -28,8 +28,14 @@ body {
 }
 
 /*Table*/
+table{
+    border-collapse: collapse;
+}
+
+th,
+td{
+    border: 1px solid black;
+    padding: 4px;
+}
 
 /*Typography*/
-strong{
-    color:rgb(75, 0, 128);
-}
