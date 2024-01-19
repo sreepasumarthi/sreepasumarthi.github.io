@@ -5,16 +5,15 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*Navigation*/
-
 #content{
     background: rgb(235, 213, 189);
     width: 80%;
     margin:auto;
-    padding: 5px 4px;
+    padding: 5px 5Spx;
     border-radius: 4px;
 }
 
+/*Navigation*/
 #content a{
     text-decoration:none;
     background:black;
@@ -26,4 +25,11 @@ body {
 
 #content a:hover{
     background: grey;
+}
+
+/*Table*/
+
+/*Typography*/
+strong{
+    color:green;
 }
