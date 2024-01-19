@@ -1,5 +1,14 @@
-#content{
-    background: rgb(239, 208, 169);
-    padding: 16px;
-    text-align: center;
+/*Structure*/
+body {
+    background:goldenrod;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Navigation*/
+a{
+    text-decoration:none;
+    background:black;
+    color:white;
+    padding: 5px;
+    border-radius: 3px
 }
