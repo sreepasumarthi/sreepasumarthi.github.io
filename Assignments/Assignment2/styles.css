@@ -1,7 +1,7 @@
 /*Structure*/
 
 body {
-    background:goldenrod;
+    background:url(images/cavabackground.jpg);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -39,7 +39,7 @@ td{
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    color: whitesmoke;
+    background-color: whitesmoke;
 }
 
 th {
