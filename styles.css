@@ -4,13 +4,17 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#content{
+    background: skyblue;
+    width: 80%;
+}
 /*Typography*/
 h1{
-    color:rgb(86, 55, 16);
+    color:rgb(108, 68, 20);
 }
 h2{
-    color:rgb(108, 68, 20);
+    color:rgb(172, 109, 32);
 }
 h3{
-    color:rgb(108, 68, 20);
+    color:rgb(172, 109, 32);
 }
