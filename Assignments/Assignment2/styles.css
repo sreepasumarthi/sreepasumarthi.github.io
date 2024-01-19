@@ -10,7 +10,7 @@ a{
     background:black;
     color:white;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 a:hover{
     background: grey;
