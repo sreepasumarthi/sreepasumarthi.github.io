@@ -1,13 +1,7 @@
-/*Structure*/
-body{
-    background:goldenrod;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 #content{
-    background:black;
-    width: 85%;
+    background: rgb(239, 208, 169);
+    width: 80%;
     margin:auto;
-    padding: 6px 6px;
+    padding: 5px 5px;
     border-radius: 6px;
 }
