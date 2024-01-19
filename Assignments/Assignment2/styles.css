@@ -1,4 +1,7 @@
 /*Structure*/
+h2{
+    margin:auto;
+}
 body {
     background:goldenrod;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
