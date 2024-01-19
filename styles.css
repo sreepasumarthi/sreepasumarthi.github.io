@@ -5,8 +5,11 @@ body{
 }
 
 #content{
-    background: skyblue;
+    background: rgb(239, 208, 169);
     width: 80%;
+    margin:auto;
+    padding: 5px 5px;
+    border-radius: 5px;
 }
 /*Typography*/
 h1{
