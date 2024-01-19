@@ -46,7 +46,7 @@ th {
 }
 
 /*Images*/
-img {
-    border: 7px solid:black;
-    padding: 15px;
+img{
+    border: black;
+    padding: 5px;
 }
