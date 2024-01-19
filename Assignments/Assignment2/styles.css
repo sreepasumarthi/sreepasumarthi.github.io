@@ -5,17 +5,6 @@ body {
 }
 
 /*Navigation*/
-a{
-    text-decoration:none;
-    background:black;
-    color:white;
-    padding: 5px;
-    border-radius: 4px;
-    margin:auto;
-}
-a:hover{
-    background: grey;
-}
 
 #content{
     background: rgb(235, 213, 189);
@@ -23,4 +12,17 @@ a:hover{
     margin:auto;
     padding: 5px 5px;
     border-radius: 5px;
+}
+
+#content a{
+    text-decoration:none;
+    background:black;
+    color:white;
+    padding: 5px;
+    border-radius: 4px;
+    margin:auto;
+}
+
+#content a:hover{
+    background: grey;
 }
