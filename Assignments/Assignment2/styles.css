@@ -9,7 +9,7 @@ body {
     background: rgb(235, 213, 189);
     width: 90%;
     margin:auto;
-    padding: 5px 5Spx;
+    padding: 5px 5px;
     border-radius: 4px;
 }
 
@@ -50,4 +50,11 @@ th {
 img{
     border: 5px solid black;
     padding: 3px;
+    border-radius: 3px;
+}
+
+/*Typography*/
+.subtitle{
+    color:brown;
+    font-style: italic;
 }
