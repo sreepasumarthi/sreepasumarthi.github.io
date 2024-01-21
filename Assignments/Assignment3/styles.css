@@ -39,12 +39,12 @@ body {
     border-top: 1px solid cadetblue;
     border-right: 1px solid cadetblue;
     border-left: 1px solid cadetblue;
+    text-align: center;
 }
 
 #main-nav a {
     text-decoration: none;
     color:white;
-    text-align: center;
 }
 
 /*Typography*/
