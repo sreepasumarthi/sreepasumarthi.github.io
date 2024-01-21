@@ -1,4 +1,7 @@
 /*Structure*/
+body {
+    background-color: antiquewhite;
+}
 #main-header {
     background-color: blanchedalmond;
 }
@@ -42,7 +45,7 @@ body {
 }
 
 #main-content h2 {
-    color:white;
+    color:black;
 }
 
 /*Larger Resolutions*/
