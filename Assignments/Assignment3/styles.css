@@ -18,6 +18,10 @@ body {
     border-radius:2px;
 }
 
+#side-links {
+    background-color:cornflowerblue;
+}
+
 #article {
     background-color: lightblue;
 }
