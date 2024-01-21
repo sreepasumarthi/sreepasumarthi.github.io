@@ -5,15 +5,18 @@ body {
 
 
 #main-content {
-    background-color: cadetblue;
+    background-color: white;
     padding: 5px;
 }
 
 .col1of2 {
-    background-color:antiquewhite;
+    background-color:white;
     padding: 5px;
     margin: 5px;
-    border-radius: 5px;
+    border-top: 1px solid cadetblue;
+    border-bottom: 1px solid cadetblue;
+    border-left:1px solid cadetblue;
+    border-right:1px solid cadetblue;
 }
 
 /*Navigation*/
