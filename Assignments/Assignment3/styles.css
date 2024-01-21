@@ -1,6 +1,9 @@
 /*Structure*/
+body{
+    background-color: beige;
+}
 #main-header{
-    background-color:beige;
+    background-color:blanchedalmond;
 }
 
 /*Typography*/
