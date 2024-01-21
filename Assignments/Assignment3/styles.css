@@ -31,12 +31,11 @@ body {
     border-left: 1px solid cadetblue;
     border-right: 1px solid cadetblue;
     text-align:center;
-    color:white;
 }
 
 #main-nav a {
     text-decoration: none;
-    color:black;
+    color:white;
 }
 
 /*Typography*/
@@ -55,6 +54,8 @@ body {
 #main-header h1 {
     text-align:center;
 }
+
+#main-content 
 
 
 /*Larger Resolutions*/
