@@ -2,9 +2,7 @@
 body {
     background-color: antiquewhite;
 }
-#main-header {
-    background-color: blanchedalmond;
-}
+
 
 #main-content {
     background-color: cornflowerblue;
@@ -36,6 +34,10 @@ body {
 }
 
 /*Typography*/
+#main-header h1 {
+    color: cadetblue;
+}
+
 body {
     font-family:Arial, Helvetica, sans-serif;
 }
