@@ -71,7 +71,7 @@ body{
 
     #article {
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .col1of2 {
