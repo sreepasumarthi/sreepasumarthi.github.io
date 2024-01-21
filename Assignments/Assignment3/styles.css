@@ -1,4 +1,7 @@
 /*Structure*/
+body {
+    background-color: blanchedalmond;
+}
 #main-header {
     background-color:blanchedalmond;
 }
@@ -28,7 +31,10 @@
     list-style-type: none;
     padding: 5px;
     background-color:lightcoral;
-    border-bottom: 1px solid blanchedalmond;
+    border-bottom: 1px solid cadetblue;
+    border-top: 1px solid cadetblue;
+    border-right: 1px solid cadetblue;
+    border-left: 1px solid cadetblue;
 }
 
 #main-nav a {
