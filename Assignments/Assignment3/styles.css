@@ -49,9 +49,6 @@ body {
     text-align:center;
 }
 
-#main-content h2 {
-    color:black;
-}
 
 /*Larger Resolutions*/
 @media (min-width:900px) {
