@@ -1,13 +1,14 @@
 /*Structure*/
 body {
-    background-color: blanchedalmond;
+    background-color:rgb(254, 252, 243);
+
 }
 #main-header {
-    background-color:blanchedalmond;
+    background-color:rgb(254, 252, 243);
 }
 
 #main-content {
-    background-color: cornflowerblue;
+    background-color: blanchedalmond;
     padding: 5px;
 }
 
@@ -19,7 +20,7 @@ body {
 }
 
 #side-links {
-    background-color:cornflowerblue;
+    background-color:blanchedalmond;
 }
 
 #article {
