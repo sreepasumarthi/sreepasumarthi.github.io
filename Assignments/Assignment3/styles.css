@@ -66,7 +66,7 @@ body{
 @media (min-width: 900px) {
     #main-nav ul,
     .flex-container {
-        display:flex;
+        display: flex;
     }
 
     #main-nav li, 
@@ -75,12 +75,21 @@ body{
     }
 
     #article {
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
-
     .col1of2 {
-        width:100%;
+        width: 100%;
+    }
+    #side-links {
+        width: 200px;
+        background-color: cornflowerblue;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    #main-content {
+        flex: 1;
+        padding-left: 10px;
     }
 }
-
