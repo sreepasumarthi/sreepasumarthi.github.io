@@ -54,21 +54,21 @@ body{
 @media (min-width: 900px) {
     #main-nav ul,
     .flex-container {
-        display:flex
+        display:flex;
     }
 
     #main-nav li, 
     .col1of2 {
-        flex: 1
+        flex: 1;
     }
 
     #article {
         display:flex;
-        flex-wrap:wrap;
+        flex-direction: row;
     }
 
     .col1of2 {
-        flex-basis: calc(33.33% - 10px);
+        width:100%;
     }
 }
 
