@@ -1,29 +1,61 @@
 /*Structure*/
-body{
-    background:rgb(251, 243, 233);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: navy;
 }
 
-#content{
-    background: rgb(239, 208, 169);
-    width: 80%;
-    margin:auto;
-    padding: 5px 5px;
-    border-radius: 5px;
+#main-content {
+    padding-left: 100px;
+    margin-right:30px;
 }
-
-#content a{
-    text-decoration: none;
-    color: black;
-}
-
 /*Typography*/
-h1{
-    color:rgb(108, 68, 20);
+
+#main-header h2{
+    margin-left:230px;
+    font-size: 30px;
 }
-h2{
-    color:rgb(172, 109, 32);
+
+#main-header h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top:5px;
 }
-h3{
-    color:rgb(172, 109, 32);
+
+#main-header h3 {
+    text-align: center;
+    font-size: 40px;
+    margin:0px;
+}
+
+.underneath-article {
+    margin-left: 10px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+}
+
+.underneath-article img {
+    display: block;
+    margin: 0 auto;
+}
+
+.underneath-article h3 {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+.underneath-aside {
+    text-align: left;
+    color: white;
+}
+
+@media (min-width: 900px) {
+    .flex-container {
+        display: flex;
+    }
+
+}
+
+#underneath-article {
+    flex: 1;
 }
