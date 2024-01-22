@@ -5,14 +5,13 @@ body {
     background-color: navy;
 }
 
-#main-content {
-    padding-left: 100px;
-    margin-right:30px;
-}
 /*Typography*/
+a {
+    color: aliceblue;
+}
 
 #main-header h2{
-    margin-left:230px;
+    margin-left:30px;
     font-size: 30px;
 }
 
@@ -25,13 +24,35 @@ body {
 #main-header h3 {
     text-align: center;
     font-size: 40px;
-    margin:0px;
+    margin-top: 5px;
 }
 
+img {
+    width: 300px;
+    height: 150px;
+}
 .underneath-article {
-    margin-left: 10px;
-    margin-right: 200px;
-    margin-bottom: 10px;
+    background-color: black;
+}
+.underneath-article {
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.underneath-article h3 {
+    text-align: center;
+    color: white;
+}
+.underneath-aside {
+    text-align: left;
+    color: white;
+}
+
+footer {
+    text-align: center;
 }
 
 .underneath-article img {
@@ -39,23 +60,9 @@ body {
     margin: 0 auto;
 }
 
-.underneath-article h3 {
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-}
-.underneath-aside {
-    text-align: left;
-    color: white;
-}
-
 @media (min-width: 900px) {
     .flex-container {
         display: flex;
     }
 
-}
-
-#underneath-article {
-    flex: 1;
 }
