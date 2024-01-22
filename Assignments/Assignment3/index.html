@@ -1,54 +1,59 @@
 <!--Sree Pasumarthi CSCE 242-->
 <!DOCTYPE html>
 <html lang="eng">
-  <head>
-    <title>Layout with Flexbox</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+    <title>Layout with Flex</title>
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
     <header id="main-header">
-        <h1>Layout with Flexbox</h1>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
-                <li><a href="#">Link 5</a></li>
-                <li><a href="#">Link 6</a></li>
-            </ul>
-        </nav>
+<h1>Layout with Flex</h1>
+<nav id="main-nav">
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+    </ul>
+</nav>
     </header>
-    
     <main id="main-content">
-        <aside id="side-links">
-            <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-            </ul>
-        </aside>
-        <h2>Big Ideas!</h2>
         <div class="flex-container">
-            <article id="article">
-                <section class="col1of2">
-                    <h3>First Section</h3>
-                    <p>This is some sample text.</p>
-                </section>
-                <section class="col1of2">
-                    <h3>Second Section</h3>
-                    <p>This is some sample text.</p>
-                </section>
-                <section class="col1of2">
-                    <h3>Third Section</h3>
-                    <p>This is some sample text.</p>
-                </section>
-            </article>
+            <section id="col1">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </section>
+            <section id="col2">
+                <h2>Big Ideas!</h2>
+                <article class="main-article">
+                    <img src="images/cava1.jpg">
+                    <h3>Idea 1</h3>
+                </article>
+                <article class="main-article">
+                    <img src="images/cava1.jpg">
+                    <h3>Idea 2</h3>
+                </article>
+                <article class="main-article">
+                    <img src="images/cava1.jpg">
+                    <h3>Idea 3</h3>
+                </article>
+            </section>
+        </div>
+        <div id="under-main">
+            <div class="flex-container">
+                <h2>Stuff</h2>
+            </div>
         </div>
     </main>
-    <footer id="main-footer">
+    <footer id="footer">
         <p>&copy sreepasumarthi.com</p>
     </footer>
-  </body>
+</body>
 </html>
