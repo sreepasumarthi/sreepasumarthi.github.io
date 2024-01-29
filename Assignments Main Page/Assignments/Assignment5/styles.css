@@ -88,7 +88,6 @@ button[type="submit"] {
     margin: 0;
 }
 
-/* Apply hover effect to the search bar and button simultaneously */
 .search-bar:hover input[type="text"] {
     background-image: linear-gradient(to right, white 50%, black 50%);
 }
@@ -179,13 +178,28 @@ button[type="submit"] {
     color:black;
     padding-left:350px;
     padding-top:-100px;
+    position: relative;
+}
+
+#under-main1 h1{
+    top: 0;
+    margin-bottom: 10px;
+}
+
+#col3 {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    width: 200px; 
+    padding-top: 20px;
+    padding-right: 20px; 
 }
 
 .article {
     width: 500px;
 }
 .article:hover {
-    background-color: #f0f0f0; /* Change background color on hover */
+    background-color: #f0f0f0;
 }
 
 #under-main {
@@ -341,14 +355,13 @@ body {
 
 }
 
-/* Modify the lines separating list items in col1 */
 #col1 li::before,
 #col1 li::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
-    height: 1px; /* Adjust thickness as needed */
+    height: 1px;
     width: 250px;
     background-color: black;
     margin-left: 50px;
@@ -360,14 +373,13 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    height: 0.5px; /* Adjust thickness as needed */
+    height: 0.5px;
     width: 800px;
     background-color: black;
     margin-left: 350px;
     margin-top:10px;
 }
 
-/* Keep the text within list items bold */
 #col1 li a {
     font-weight: bold;
 }
@@ -380,13 +392,13 @@ body {
 
 .main-article img {
     float: left;
-    margin-right: 20px; /* Adjust margin as needed */
+    margin-right: 20px;
 }
 
 .main-article aside {
-    overflow: hidden; /* Clear floats */
+    overflow: hidden;
 }
 
 .main-article:hover {
-    background-color:gray; /* Change to desired grey color */
+    background-color:gray;
 }
