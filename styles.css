@@ -5,3 +5,19 @@ li a {
     text-decoration: none;
     color:brown;
 }
+
+
+#theatre {
+    padding-top: 2px;
+    padding-bottom: 8px;
+    background-color:#73000A;
+    margin: 0;
+    padding-left:50px;
+    height:40px;
+}
+
+#col4 img {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+}
