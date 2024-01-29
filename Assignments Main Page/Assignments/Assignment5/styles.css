@@ -16,7 +16,7 @@ header {
 #below-img {
     padding-top: 2px;
     padding-bottom: 8px;
-    background-color: red;
+    background-color:#73000A;
     margin: 0;
     padding-left:50px;
     height:40px;
@@ -94,7 +94,7 @@ button[type="submit"] {
 }
 
 .search-bar:hover button[type="submit"] {
-    background-color: red;
+    background-color:#73000A;
 }
 
 /* Add transition effects for smooth animation */
@@ -193,7 +193,7 @@ button[type="submit"] {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: red;
+    background-color:#73000A;
 }
 
 #under-main h2 {
@@ -295,7 +295,7 @@ body {
     text-align: left;
 }
 #col1 a:hover {
-    background-color: red;
+    background-color: #73000A;
     color: white;
     cursor: pointer;
 }
@@ -370,4 +370,23 @@ body {
 /* Keep the text within list items bold */
 #col1 li a {
     font-weight: bold;
+}
+
+.main-article {
+    clear: both;
+    overflow: auto;
+    width:480px;
+}
+
+.main-article img {
+    float: left;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.main-article aside {
+    overflow: hidden; /* Clear floats */
+}
+
+.main-article:hover {
+    background-color:gray; /* Change to desired grey color */
 }
