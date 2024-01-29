@@ -1,0 +1,373 @@
+/*Structure*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+
+
+header {
+    font-size: x-small;
+    background-color: black;
+    margin: 0;
+}
+
+#below-img {
+    padding-top: 2px;
+    padding-bottom: 8px;
+    background-color: red;
+    margin: 0;
+    padding-left:50px;
+    height:40px;
+}
+#below-img h1 {
+    padding-bottom:15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#top-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#top-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding-left: 920px;
+}
+
+#top-nav li {
+    padding: 7px;
+    margin-bottom: 0px;
+}
+
+#top-image img {
+    width: 200px;
+    height: auto;
+    margin-right: 610px;
+    padding-left: 10px;
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    margin: 0;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Apply hover effect to the search bar and button simultaneously */
+.search-bar:hover input[type="text"] {
+    background-image: linear-gradient(to right, white 50%, black 50%);
+}
+
+.search-bar:hover button[type="submit"] {
+    background-color: red;
+}
+
+/* Add transition effects for smooth animation */
+.search-bar input[type="text"],
+.search-bar button[type="submit"] {
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 900px) {
+    #top-nav {
+        display: none;
+    }
+
+    .search-container {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #top-image img {
+        margin-right: 10px;
+    }
+
+    input[type="text"] {
+        display: none;
+    }
+}
+
+#main-content {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#col2 img {
+    padding-left: 40px;
+    padding-top:20px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+
+#col2 p {
+    color:black;
+    text-align: left;
+    padding-left:97px;
+    margin-top:-10px;
+    font-size: 20px;
+    padding-right:45px;
+}
+
+#col2 h2 {
+    margin-left:91px;
+    margin-top:7px;
+}
+.flex-container {
+    min-height: 100vh; /* Adjust as needed */
+}
+
+
+#col1 {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+#col2 {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#under-main1 {
+    background-color:white;
+    color:black;
+    padding-left:350px;
+    padding-top:-100px;
+}
+
+.article {
+    width: 500px;
+}
+.article:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+#under-main {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: red;
+}
+
+#under-main h2 {
+    margin: 0;
+}
+
+
+.main-article img {
+    margin-right: 10px;
+    padding-left: 9px;
+    margin-bottom: 10px;
+}
+
+.underneath-article {
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.underneath-article img {
+    display: block;
+    margin: 0 auto;
+}
+
+#footer {
+    background-color: #333;
+}
+
+
+/*Navigation*/
+#main-nav ul {
+    padding-left: 0;
+}
+
+#main-nav li {
+    list-style: none;
+    padding: 5px;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+#col1 ul {
+    text-align: left;
+    padding-top:30px;
+    padding-left: 50px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+/*Typography*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-header h1 {
+    text-align: center;
+    color: cadetblue;
+}
+
+#footer {
+    color: cadetblue;
+    text-align: center;
+}
+
+#col1 h3 {
+    color: cadetblue;
+    text-align: left;
+    padding-left: 50px;
+    margin: 1px;
+    margin-bottom: 10px;
+}
+
+#col2 h2 {
+    color: black;
+    text-align: left;
+    padding: 5px;
+}
+
+#col1 a {
+    color: black;
+}
+
+#col1 li{
+    padding-top: 13px;
+    padding-bottom:13px;
+}
+
+.main-article h3 {
+    color: cadetblue;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.main-article p {
+    padding-left: 5px;
+}
+
+.main-aside {
+    text-align: left;
+}
+#col1 a:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.underneath-aside {
+    text-align: left;
+    color: white;
+}
+
+.underneath-article h3 {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+#col1 a {
+    text-decoration: none;
+}
+
+
+/*Larger Resolutions*/
+@media (min-width: 900px) {
+
+    #main-nav ul,
+    .flex-container,
+    .main-article {
+        display: flex;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    #col1 {
+        width: 100%;
+        flex: 1;
+        height: 300px;
+    }
+
+    #col2 {
+        flex: 4;
+    }
+
+}
+
+/* Modify the lines separating list items in col1 */
+#col1 li::before,
+#col1 li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px; /* Adjust thickness as needed */
+    width: 250px;
+    background-color: black;
+    margin-left: 50px;
+    margin-top:-10px;
+}
+
+#col2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0.5px; /* Adjust thickness as needed */
+    width: 800px;
+    background-color: black;
+    margin-left: 350px;
+    margin-top:10px;
+}
+
+/* Keep the text within list items bold */
+#col1 li a {
+    font-weight: bold;
+}
