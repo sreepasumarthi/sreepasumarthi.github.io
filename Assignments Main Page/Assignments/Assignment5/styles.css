@@ -265,6 +265,7 @@ color:white;
 
 #grey-bar h2{
     padding-top:10px;
+    padding-left: 20px;
 }
 
 #grey-bar li {
@@ -296,10 +297,17 @@ color:white;
     margin: 0;
 }
 
+
 #footer {
     background-color:black;
     color:white;
     height:40px;
+}
+
+#footer a:hover{
+        background-color:#CC2E40;
+        color: white;
+        cursor: pointer;
 }
 
 #footer a {
@@ -311,6 +319,23 @@ color:white;
     padding-top:10px;
     list-style-type: none;
     display:flex;
+    padding-left: 0px;
+}
+
+#footer li{
+    padding-left: 60px;;
+    padding-right: 60px;
+    border-right:1px solid white;
+}
+
+/*Garnet Bar*/
+.under-flex-container{
+    display: flex;
+    justify-content:space-between;
+    background: #73000A;
+    padding-left: 60px;
+    padding-right:50px;
+    padding-top:10px;
 }
 
 /*Resolutions*/
