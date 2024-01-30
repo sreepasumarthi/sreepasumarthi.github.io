@@ -358,8 +358,7 @@ color:white;
     }
 
     #header-flex-container {
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
     }
 
     .search-bar {
@@ -431,4 +430,55 @@ color:white;
     #footer {
         text-align: center;
     }
+    #last-thing {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #last-thing section {
+        margin-bottom: 20px;
+    }
+
+    #footer ul {
+        font-size: 14px; /* Adjust font size as needed */
+    }
+}
+
+/*Last Thing*/
+#last-thing {
+    display: flex;
+    
+    justify-content: space-between; 
+    align-items: stretch; 
+    padding-left:60px;
+    padding-right:60px;
+    padding-top:30px;
+    color:white;
+}
+
+#last-thing li {
+    list-style-type: none;
+    padding-top:5px;
+}
+
+#last-thing ul {
+    padding-left:3px;
+    margin-top:10px;
+}
+
+#last-thing a {
+    color:white;
+    text-decoration: none;
+}
+
+#last-thing a:hover {
+    background-color:#CC2E40;
+    color: white;
+    cursor: pointer;
+}
+
+#last-thing h2 {
+    border-bottom: 1px solid white;
+    padding-bottom:10px;
 }
