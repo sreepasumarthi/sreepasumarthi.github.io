@@ -1,193 +1,90 @@
- /*Structure*/
- body {
-    background-color: rgb(253, 250, 245);
-    font-family: Arial, Helvetica, sans-serif;
+/* Add the following CSS to your stylesheet */
+
+#under-main1 {
+    background-color: white;
+    color: black;
 }
 
-#main-content {
-    background-color: blanchedalmond;
-    margin: 0;
-    padding: 0;
-    border-left: 1px solid cadetblue;
-    border-right: 1px cadetblue;
-    border-top: 1px cadetblue;
-    border-bottom: 1px cadetblue;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
 }
 
-
-#col1 {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    border-top: 1px solid cadetblue;
-    text-align: center;
+#col3,
+#col4 {
+    flex: 1; /* Equal width for both columns */
 }
 
-#col2 {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    border-top: 1px solid cadetblue;
-    border-left: 1px solid cadetblue;
-    border-right: 1px solid cadetblue;
-    text-align: center;
+.main-articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add spacing between articles */
 }
 
-#main-nav a {
-    text-decoration: none;
-    color: white;
+.main-article {
+    flex: 1; /* Each article occupies equal space */
+    border: 1px solid #ccc; /* Add border for clarity */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Add background color for clarity */
+    display: flex;
 }
-
-#under-main {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: cadetblue;
-}
-
-#under-main h2 {
-    margin: 0;
-}
-
 
 .main-article img {
-    margin-right: 10px;
-    padding-left: 9px;
-    margin-bottom: 10px;
+    width: 100px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between image and text */
 }
 
-.underneath-article {
-    margin-left: 10px;
-    margin-right: 30px;
-    margin-bottom: 10px;
+.main-article aside {
+    flex: 1; /* Fill remaining space */
 }
 
-.underneath-article img {
-    display: block;
-    margin: 0 auto;
+#m1,
+#m2 {
+    margin-top: 20px; /* Add top margin */
 }
 
-
-
-/*Navigation*/
-#main-nav ul {
-    padding-left: 0;
-}
-
-#main-nav li {
-    list-style: none;
-    padding: 5px;
-    background-color: lightcoral;
-    border-bottom: 1px solid cadetblue;
-    border-top: 1px solid cadetblue;
-    border-left: 1px solid cadetblue;
-    border-right: 1px solid cadetblue;
-    text-align: center;
-}
-
-#col1 ul {
-    text-align: left;
-    padding: 10px;
-    margin: 0px;
-    list-style-type: none;
-}
-
-/*Typography*/
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#main-header h1 {
-    text-align: center;
-    color: cadetblue;
-}
-
-#footer {
-    color: cadetblue;
-    text-align: center;
-}
-
-#col1 h3 {
-    color: cadetblue;
-    text-align: left;
-    padding: 10px;
-    margin: 1px;
-    margin-bottom: 10px;
-}
-
-#col2 h2 {
-    color: cadetblue;
-    text-align: left;
-    padding: 5px;
-}
-
-#col1 a {
-    color: lightcoral
-}
-
-.main-article h3 {
-    color: cadetblue;
-    text-align: left;
-    padding-left: 5px;
-}
-
-#col1 {
-    float:left;
-}
-
-#col2 {
-    float:left;
-}
-
-#col3 {
-    float:right;
-}
-
-.main-article p {
-    padding-left: 5px;
-}
-
-.main-aside {
-    text-align: left;
-}
-
-.underneath-aside {
-    text-align: left;
-    color: white;
-}
-
-.underneath-article h3 {
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-}
-
-
-/*Larger Resolutions*/
-@media (min-width: 900px) {
-
-    #main-nav ul,
-    .flex-container,
+@media (max-width: 900px) {
+    /* Adjustments for smaller screens */
     .main-article {
-        display: flex;
+        flex-direction: column; /* Stack articles vertically */
     }
 
-    #main-nav li {
-        flex: 1;
+    .main-article img {
+        margin-right: 0; /* Reset margin for smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
     }
-
-    #col1 {
-        width: 100%;
-        flex: 1;
-        height: 300px;
-    }
-
-    #col2 {
-        flex: 4;
-    }
-
 }
 
+/* Update the CSS for the main-article elements */
+
+.main-article {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.main-article img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.main-article aside {
+    flex: 1;
+}
+
+@media (max-width: 900px) {
+    /* Adjustments for smaller screens */
+    .main-article {
+        flex-direction: column; /* Stack articles vertically */
+    }
+
+    .main-article aside {
+        order: -1; /* Move the aside to the top of the stack */
+    }
+}
