@@ -1,0 +1,118 @@
+/*Body*/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:darkolivegreen;
+}
+
+/*Header*/
+
+header h1 {
+    text-align: center;
+    color:bisque;
+}
+
+header h2 {
+    text-align: center;
+    color: burlywood;
+}
+
+/*Main Div*/
+
+#main {
+    display: flex;
+    justify-content:space-between;
+    margin-top:-50px;
+    padding:80px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+/*Change*/
+
+#change {
+background-color:olivedrab;
+width:250px;
+border-top: 1px solid bisque;
+border-right:1px solid bisque;
+border-bottom: 1px solid bisque;
+border-left: 1px solid bisque;
+}
+
+#change h2 {
+    text-align: center;
+    color:bisque;
+}
+
+#change img {
+    padding-left: 25px;
+}
+
+#change p {
+    font-weight: lighter;
+    font-size: medium;
+    text-align:left;
+    margin-left:20px;
+    margin-right:20px;
+    color:bisque;
+}
+
+
+/*Slider*/
+
+#slider {
+    background-color:olivedrab;
+width:250px;
+border-top: 1px solid bisque;
+border-right:1px solid bisque;
+border-bottom: 1px solid bisque;
+border-left: 1px solid bisque;
+    }
+
+#slider h2 {
+        text-align: center;
+        color: bisque;
+    }
+
+#slider p {
+    font-weight: lighter;
+    font-size: medium;
+    text-align:left;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#rotSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 230px;
+    height: 20px;
+    background: bisque;
+    outline: none;
+    border: none;
+    border-radius: 0;
+}
+
+#rotSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background:darkolivegreen;
+    cursor: pointer;
+    border-radius: 0%;
+}
+
+
+
+/*Stars*/
+
+#stars {
+        background-color:bisque;
+        width:250px;
+        }
+
+#stars h2 {
+            text-align: center;
+            color:olivedrab;
+        }
