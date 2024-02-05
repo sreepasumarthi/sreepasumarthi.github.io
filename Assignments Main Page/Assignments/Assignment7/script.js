@@ -22,5 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//Add stars in column
+function addImage(event) {
+    var rect = event.target.getBoundingClientRect();
+    var x = event.clientX - rect.left;
+    var y = event.clientY - rect.top;
+    var img = document.createElement('img');
+    img.src = 'images/star.png';
+    img.alt = 'Added Image';
+    img.style.position = 'absolute';
+    img.style.left = x + 'px';
+    img.style.top = y + 'px';
+    img.width = '50';
+    img.height = '50';
+    event.target.appendChild(img);
+}
 
 
