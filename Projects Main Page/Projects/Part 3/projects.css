@@ -13,7 +13,7 @@ body {
 #main-nav {
     margin-top: 10px;
     padding-bottom: 40px;
-    margin-right: 50px;
+    margin-right: 38px;
 }
 
 #main-nav ul li {
@@ -29,8 +29,8 @@ body {
 }
 
 #logo {
-    padding-left: 70px;
-    padding-top: 7px;
+    padding-left: 60px;
+    padding-top: 15px;
 }
 
 /* base styles */
@@ -150,4 +150,124 @@ a:hover {
 
 #this a{
     text-decoration: underline;
+}
+
+#click {
+    text-align: center;
+    color:white;
+}
+/*Grid*/
+.container {  
+    margin-top:50px;
+    margin-right:50px;
+    margin-left:60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Project-1 Project-2 Project-3"
+      "Project-4 Project-5 Project-6"
+      "Project-7 Project-8 Project-9";
+  }
+  
+  .Project-1 { 
+    grid-area: Project-1; 
+    border:1px solid white;
+    color:white;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+  .Project-2 { 
+    grid-area: Project-2; 
+    border:1px solid white;
+    color:white;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+  .Project-3 { 
+    grid-area: Project-3; 
+    border:1px solid white;
+    color:white;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+  .Project-4 { 
+    grid-area: Project-4;
+    border:1px solid white;
+    color:white;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+  .Project-5 { 
+    grid-area: Project-5;
+    border:1px solid white;
+    color:white; 
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+  .Project-6 { 
+    grid-area: Project-6; 
+    border:1px solid white;
+    color:white;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+  .Project-7 { 
+    grid-area: Project-7;
+    border:1px solid white;
+    color:white;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+  .Project-8 { 
+    grid-area: Project-8;
+    border:1px solid white;
+    color:white; 
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+  .Project-9 { 
+    grid-area: Project-9;
+    border:1px solid white;
+    color:white;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+footer {
+    background-color: grey;
+    margin-top: 40px; /* Push the footer to the bottom */
+    text-align: center;
+    padding-bottom: 10px; /* Add padding for better visibility */
+}
+
+.Project-1:hover,
+.Project-2:hover,
+.Project-3:hover,
+.Project-4:hover,
+.Project-5:hover,
+.Project-6:hover,
+.Project-7:hover,
+.Project-8:hover,
+.Project-9:hover {
+    background-color: grey; /* Change background color on hover */
 }

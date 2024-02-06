@@ -179,3 +179,13 @@ a:hover {
             flex-direction: column;
         }
 }
+
+#addl a{
+    text-decoration: underline;
+    padding-left:20px;
+}
+
+#addl{
+    padding-top:30px;
+    padding-left:120px;
+}
