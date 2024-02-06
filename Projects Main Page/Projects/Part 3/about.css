@@ -1,9 +1,78 @@
 
-
-:root {
-    --backcolor: white;
-    --fontcolor: black;
+body {
+    display:flex;
+    background-color: black;
+    margin:0px;
+    padding:0px;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+#half1{
+    margin: 0px;
+    padding:0px;
+    width:50%;
+    background-color:grey;
+}
+
+#changeImg {
+    padding-left:150px;
+    padding-top:50px;
+}
+
+#half2{
+    width:50%;
+    background-color:black;
+}
+
+#main-nav {
+    padding-left:10px;
+
+}
+#main-nav ul li{
+    display:inline-block;
+}
+
+#main-nav a{
+    text-decoration:none;
+    color:white;
+    font-weight: bold;
+    padding-left:20px;
+}
+
+#this {
+    text-decoration: underline;
+    color:white;
+}
+
+#main-content {
+    color:white;
+}
+
+#main-content h1{
+    font-size:30px;
+    margin-top: 0; /* Remove margin */
+    margin-bottom: 10px;
+}
+
+#main-content h2 {
+    font-weight: 100;
+    margin-top: 0; /* Remove margin */
+    margin-bottom: 10px;
+}
+
+article {
+    padding-left:150px;
+    padding-right:80px;
+    padding-top:110px;
+}
+
+#logo {
+    padding-left:70px;
+    padding-top:10px;
+}
+
+/*Ham*/
 
 /* base styles */
 * {
@@ -21,20 +90,14 @@ a:visited {
     color: white;
 }
 a:hover {
-    color: black;
-}
-
-body {
-    background-color:black;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    color: #6F86FF;
 }
 
 
 
 /* off-screen-menu */
 .off-screen-menu {
-    background-color:gray;
+    background-color:  rgb(34, 37, 49);
     height: 100vh;
     width: 100%;
     max-width: 450px;
@@ -55,15 +118,6 @@ body {
 
 
 
-/* nav */
-nav {
-    padding: 1rem;
-    display: flex;
-    background-color: black;
-}
-
-
-
 /* ham menu */
 .ham-menu {
     height: 50px;
@@ -74,7 +128,7 @@ nav {
 .ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: white;
+    background-color: black;
     border-radius: 25px;
     position: absolute;
     left: 50%;
@@ -103,45 +157,20 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-#content {
-    background-color: aqua;
-    display: flex;
-    justify-content: space-between;
-    height:100px;
+@media (min-width:900px) {
+    .ham-menu {
+        display:none
+    }
 }
 
-.pics {
-    padding-left:20px;
-}
-
-#lightboxplaceholder {
-    padding-left:0px;
-    padding-top:20px;
-    padding-left:30px;
-    display:flex;
-    justify-content: space-between;
-}
-
-#lightboxplaceholder img {
-    border-radius: 20px;
-}
-
-#sec {
-    padding-top:15px;
-}
-
-.para {
-    color:white;
-    padding-left:20px;
-    padding-right:35px;
-    padding-top:30px;
-}
-#lightboxplaceholder h1 {
-color:white;
-padding-left:20px;
-}
-#txt1 {
-    color: white;
-    padding-left:40px;
-    margin-top:-60px;
+@media (max-width: 900px) {
+        .ham-menu {
+            display: block;
+        }
+        #main-nav {
+            display:none;
+        }
+        body {
+            flex-direction: column;
+        }
 }
