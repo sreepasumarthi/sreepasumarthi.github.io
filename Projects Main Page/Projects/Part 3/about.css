@@ -8,6 +8,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#hi {
+    background-color: #6F86FF;
+}
+
 #half1{
     margin: 0px;
     padding:0px;
@@ -26,7 +30,8 @@ body {
 }
 
 #main-nav {
-    padding-left:10px;
+    padding-left:50px;
+    padding-top:10px;
 
 }
 #main-nav ul li{
@@ -62,9 +67,9 @@ body {
 }
 
 article {
-    padding-left:150px;
+    padding-left:140px;
     padding-right:80px;
-    padding-top:110px;
+    padding-top:140px;
 }
 
 #logo {
@@ -99,7 +104,7 @@ a:hover {
 .off-screen-menu {
     background-color:  rgb(34, 37, 49);
     height: 100vh;
-    width: 100%;
+    width: 50px;
     max-width: 450px;
     position: fixed;
     top: 0;
@@ -128,7 +133,7 @@ a:hover {
 .ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: black;
+    background-color: white;
     border-radius: 25px;
     position: absolute;
     left: 50%;
