@@ -187,7 +187,6 @@ padding-top:30px;
 
 #certifications {
 width:350px;
-text-align:center;
 background-color: white;
 border-radius: 5px;
 }
@@ -209,4 +208,14 @@ border-radius: 5px;
 
 #technologies {
     padding-bottom:30px;
+}
+
+#certifications {
+    padding-bottom:30px;
+    text-align: left;
+}
+
+#certifications h1 {
+    text-align:center;
+
 }

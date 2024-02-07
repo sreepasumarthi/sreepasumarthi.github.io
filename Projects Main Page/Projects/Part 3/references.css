@@ -151,3 +151,33 @@ a:hover {
 #this a{
     text-decoration: underline;
 }
+
+#references {
+    color:white;
+}
+
+.ref {
+    background-color:white;
+    color:black;
+    width:1000px;
+    align-items: center;
+    margin-top:20px;
+    margin-left:110px;
+}
+
+.ref h1{
+padding-left:10px;
+padding-top:10px;
+}
+
+.ref h2{
+    padding-top:5px;
+font-size: large;
+padding-left:10px;
+}
+
+.ref p{
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom:10px;
+}
