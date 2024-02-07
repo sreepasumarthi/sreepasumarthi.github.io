@@ -151,3 +151,62 @@ a:hover {
 #this a{
     text-decoration: underline;
 }
+
+#main {
+display:flex;
+justify-content: space-between;
+padding-right:50px;
+padding-left:50px;
+padding-top:30px;
+}
+
+#languages {
+    width:350px;
+    color:black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#languages h1{
+    text-align:center;
+}
+#languages p {
+    text-align: left;
+    padding-left:10px;
+}
+#technologies {
+    width:350px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#technologies h1{
+    font-size: 30px;
+    text-align:center;
+}
+
+#certifications {
+width:350px;
+text-align:center;
+background-color: white;
+border-radius: 5px;
+}
+
+.exp {
+    font-size: small;
+    color: gray;
+    margin-left:16px;
+}
+
+.spec {
+    margin-left:20px;
+    margin-top:30px;
+}
+
+#languages {
+    padding-bottom:30px;
+}
+
+#technologies {
+    padding-bottom:30px;
+}

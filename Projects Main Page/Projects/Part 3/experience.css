@@ -173,11 +173,17 @@ a:hover {
     padding-right:300px;
     width:800px;
     margin-right:40px;
+    padding-bottom:30px;
     
 }
 
 .leadership h1{
-    padding-top:10px;
+    padding-top:7px;
+    padding-left:7px;
+}
+
+.leadership p{
+    padding-top:15px;
     padding-left:10px;
 }
 
