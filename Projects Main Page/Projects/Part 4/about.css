@@ -64,23 +64,6 @@ header {
     clip-path: circle(50% at center);
     z-index: 2;
     position: relative;
-    /* Add position relative */
-}
-
-#links li {
-    list-style-type: none;
-    display: inline;
-    padding-left: 10px;
-}
-
-#links {
-    padding-top: 20px;
-    margin-left: 790px;
-}
-
-#links a {
-    padding-left: 20px;
-    color: #556271;
 }
 
 /*Main Content*/
