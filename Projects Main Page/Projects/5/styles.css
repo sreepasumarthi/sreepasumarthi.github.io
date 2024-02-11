@@ -1,48 +1,13 @@
-/* hide the radios */
-[name="btnGroup"] { display: none }
-
-/* actions, toggle content when resp. radio is checked */
-#reset:checked  ~ .pizza-box        { background-color: transparent; border: none }
-#reset:checked  ~ .pizza-box::after { content: "" }
-
-#radio1:checked ~ .pizza-box::after { content: "checked 1" }
-#radio2:checked ~ .pizza-box::after { content: "checked 2" }
-#radio3:checked ~ .pizza-box::after { content: "checked 3" }
-#radio4:checked ~ .pizza-box::after { content: "checked 4" }
-
-/* layout eye-candy */
-.container, .button, .pizza-box {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; align-content: center; align-items: center;
-}
-.container {
-    width: 100%; gap: .5rem; padding: .5rem
-}
-.button, .pizza-box {
-    min-width: 6rem;
-    line-height: 2.25rem;
-    padding: 0 .5rem;
-
-    border: 1px solid Gray;
-}
-
-.button {
-    background-color: #e8e8e8; border-radius: 28px;
-
-    box-shadow: 0px 2px 1px -1px hsl(0,0%,0%,.20),
-                0px 1px 1px  0px hsl(0,0%,0%,.14),
-                0px 1px 3px  0px hsl(0,0%,0%,.12);
-}
-.button:active:not(:focus) {
-    transform: scale(1);
-}
-.button:hover {
-    transform: scale(1.03);
-
-    box-shadow: 0px 3px 3px -2px hsl(0,0%,0%,.20),
-                0px 3px 4px  0px hsl(0,0%,0%,.14),
-                0px 1px 8px  0px hsl(0,0%,0%,.12);
-}
-
-.pizza-box { background-color: Tomato; flex-basis: 100%; min-height: 10vh }
+.hidden {
+    display: none;
+  }
+  
+  #learnMoreText {
+    margin-top: 10px;
+  }
+  
+  #closeBtn {
+    cursor: pointer;
+    float: right;
+  }
+  

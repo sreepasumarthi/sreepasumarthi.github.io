@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn More Button</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-    <div class="container">
-        <label class="button" for="reset" >reset   </label><input id="reset"  type="radio" name="btnGroup" checked>
-        <label class="button" for="radio1">button 1</label><input id="radio1" type="radio" name="btnGroup">
-        <label class="button" for="radio2">button 2</label><input id="radio2" type="radio" name="btnGroup">
-        <label class="button" for="radio3">button 3</label><input id="radio3" type="radio" name="btnGroup">
-        <label class="button" for="radio4">button 4</label><input id="radio4" type="radio" name="btnGroup">
-    
-        <div class="pizza-box"><!-- the tab window --></div>
-    </div>
+<body>
+  <button id="learnMoreBtn">Learn More</button>
+  <div id="learnMoreText" class="hidden">
+    <span id="closeBtn">&times;</span>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>

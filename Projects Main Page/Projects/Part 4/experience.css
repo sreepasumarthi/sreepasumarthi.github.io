@@ -138,6 +138,17 @@ header{
 
 /*Main Content*/
 
+.learnMoreText {
+    margin-top: 10px; /* Initial margin */
+    transition: margin-top 0.3s ease; /* Smooth transition */
+}
+
+#main-content {
+    margin-top:130px;
+    display: flex;
+    justify-content: space-between;
+    margin-right:30px;
+}
 .experience {
     display:flex;
     justify-content:flex-end;
@@ -150,16 +161,33 @@ header{
 }
 
 .basic {
-    width:400px;
+    margin-top:100px;
+    width:300px;
     padding-left:10px;
+    background-color:#F6A2C2;
     border: 1px solid white;
+    color:white;
+    text-align: center;
+    padding-bottom:10px;
+    margin-left:40px;
+    margin-bottom: 270px;
+}
+
+.left{
+    text-align: left;
+    padding-left:20px;
+    padding-right:10px;
+}
+
+.left li {
+    padding-top:10px;
 }
 
 .basic p {
     font-size:15px;
 }
 
-#h1 {
+.h1 {
     font-size:23px;
     font-weight:600px;
 }
@@ -167,15 +195,6 @@ header{
 .basic h2 {
     font-size:20px;
     font-weight: 500;
-}
-
-.depth {
-    padding-right:10px;
-    border: 1px solid white;
-}
-
-.depth li {
-    padding-top:5px;
 }
 
 /*Footer*/
@@ -186,7 +205,7 @@ header{
     background-size:cover;
     background-position: center;
     border-top:2px solid white;
-    margin-top:90px;
+    margin-top:0px;
     position: absolute;
     right:0;
     left:0;
@@ -259,3 +278,17 @@ input[type=text]{
         display:none;
     }
 }
+
+.hidden {
+    display: none;
+  }
+  
+  .learnMoreText {
+    margin-top: 10px;
+  }
+  
+  #closeBtn {
+    cursor: pointer;
+    float: right;
+  }
+  

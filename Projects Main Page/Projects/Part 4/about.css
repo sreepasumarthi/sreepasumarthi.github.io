@@ -46,14 +46,22 @@ header{
 
 /*Main Content*/
 
+#color {
+    border-top-right-radius: 50px;
+
+}
+
 #picture {
-    width: 360px;
-    height: 360px;
+    width: 390px;
+    height: 390px;
     border: 5px solid white;
     border-radius: 50%;
     overflow: hidden;
-    margin-left:80px;
+    margin-left:65px;
     margin-top:110px;
+    z-index: 2;
+    position: relative; /* Add position relative */
+    background-color: blueviolet;
 }
 
 #picture img {
@@ -61,34 +69,49 @@ header{
     height: 100%;
     object-fit: cover;
     clip-path: circle(50% at center);
-    padding-top:10px;
+    z-index: 2;
+    position: relative; /* Add position relative */
 }
 
 #big {
-    margin-left:465px;
+    margin-left:360px;
+    padding-left:110px;
     margin-top:-375px;
     font-size: 120px;
     font-weight: 400;
     color:white;
+    background-color:blueviolet;
+    border-top-right-radius: 50px;
+    padding-top:-20px;
 }
 
 #cont {
-    width:630px;
-    margin-left:545px;
+    width:650px;
+    margin-left:550px;
     margin-top:-235px;
     color:white;
 }
 
 #cont2 {
-    margin-left:475px;
-    width:700px;
+    margin-left:430px;
+    padding-right:-10px;
+    width:720px;
     color:white;
+    border-left:1px solid white;
 }
 
 #cont3 {
-    margin-left:475px;
-    width:700px;
+    margin-left:370px;
+    margin-top:-20px;
+    width:720px;
+    padding-left:110px;
     color:white;
+    padding-top:10px;
+    padding-bottom:20px;
+    border-left:1px solid white;
+    background-color: blueviolet;
+    border-bottom-right-radius: 50px;
+
 }
 
 #links li {
@@ -104,8 +127,9 @@ header{
 
 #links a{
     padding-left:20px;
-    color:white;
+    color:#556271;
 }
+
 
 /*Smaller Resolutions*/
 
@@ -347,4 +371,13 @@ input[type=text]{
 
   #input {
     margin-top:-10px;
+  }
+
+  #cont {
+    background-color:blueviolet;
+  }
+
+  #cont2 {
+    background-color: blueviolet;
+    padding-left:50px;
   }
