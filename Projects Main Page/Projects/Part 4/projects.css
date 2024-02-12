@@ -280,3 +280,9 @@ footer {
         display: none;
     }
 }
+
+.size {
+    width:340px;
+    height:180px;
+    border-radius: 5px;
+}
