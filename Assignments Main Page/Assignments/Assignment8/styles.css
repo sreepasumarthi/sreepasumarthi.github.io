@@ -1,0 +1,159 @@
+/*Body*/
+
+body {
+    background-color: navy;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+}
+
+header {
+    text-align: center;
+}
+
+#hello h1 {
+    font-size: 30px;
+}
+
+header a {
+    color: beige;
+}
+
+#content1 {
+    margin-top: 30px;
+    background-color: beige;
+    color: navy;
+    width: 200px;
+    padding: 20px 20px 20px 20px;
+    position: absolute;
+    margin-left: 40%;
+    margin-right: 30%;
+}
+
+#cont1 h2 {
+    text-align: center;
+}
+
+#inpimg {
+    width: 100px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: beige;
+    color: navy;
+    width: 200px;
+    padding: 20px 20px 20px 20px;
+    position: absolute;
+    margin-left: 40%;
+    margin-right: 30%;
+}
+
+#sliderImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+
+#slider {
+    padding-top: 20px;
+}
+
+#sliderInput {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+#flam {
+    text-align: center;
+}
+
+#hed {
+    text-align: center;
+}
+
+#input {
+    width: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+@media (min-width: 900px) {
+
+    .togmenu,
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .togmenu {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .togmenu.active {
+        transform: rotate(180deg);
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        padding: 10px;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu-item {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu-item a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-large {
+        display: none;
+    }
+
+    .content-container {
+        margin-left:-40px;
+    }
+}
+
+#sliderInput {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    background: white;
+    outline: none;
+    border: none;
+    border-radius: 0;
+}
+
+#sliderInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: navy;
+    cursor: pointer;
+    border-radius: 0%;
+}

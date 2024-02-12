@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Conditionals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <section id="hello">
+            <h1>Assignment 8</h1>
+            <h2>If Statements</h2>
+            <div class="menu-large">
+                <a href="#" class="link" onclick="toggleContent(1)">Exercise 1</a> |
+                <a href="#" class="link" onclick="toggleContent(2)">Exercise 2</a>
+            </div>
+        </section>
+    </header>
+
+        <div class="togmenu" onclick="toggleMenu()">▼</div>
+        <div class="menu" id="menu">
+            <div class="menu-item"><a href="#" onclick="toggleContent(1)">Exercise 1</a></div>
+            <div class="menu-item"><a href="#" onclick="toggleContent(2)">Exercise 2</a></div>
+    </div>
+    <div class="content-container">
+        <div id="content1" class="content" style="display: none;">
+            <div>
+                <h2 id="hed">Enter Command</h2>
+            </div>
+            <div>
+                <ul id="list">
+                    <li>b: Read a book</li>
+                    <li>c: Act like a clown</li>
+                    <li>p: Have a birthday party</li>
+                    <li>r: Walk in the rain</li>
+                    <li>s: Shovel up some dirt</li>
+                    <li>w: Go to work</li>
+                </ul>
+            </div>
+            <div>
+                <p>
+                    <input type="text" id="input">
+                </p>
+            </div>
+            <div>
+                <img id="inpimg" src="images/read.jpg">
+            </div>
+            <p>Image by <a
+                    href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a>
+            </p>
+        </div>
+        <div id="content2" class="content" style="display: none;">
+            <section id="main">
+                <div id="main1" class="main-content">
+                    <h1 id="flam">Image Slider</h1>
+                    <div id="imageContainer">
+                        <img id="sliderImage" src="images/yoga1.jpg" alt="Yoga Image">
+                    </div>
+                    <div id="slider">
+                        <input type="range" min="1" max="8" value="1" id="sliderInput" oninput="changeImage()">
+                    </div>
+                    <p>Image by <a
+                            href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div>
+        
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
