@@ -1,10 +1,10 @@
 /*Toggle Menu*/
 function toggleContent(contentId) {
-    var contents = document.getElementsByClassName("content");
-    for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = "none";
-    }
-    var selectedContent = document.getElementById("content" + contentId);
+    const contents = document.querySelectorAll(".content");
+    contents.forEach(content => {
+        content.style.display = "none";
+    });
+    const selectedContent = document.getElementById("content" + contentId);
     if (selectedContent) {
         selectedContent.style.display = "block";
     }
@@ -37,16 +37,18 @@ const e1 = (e) => {
 document.getElementById("input").addEventListener("keyup", e1);
 
 /*Exercise 2*/
+
 function changeImage() {
-    var sliderValue = document.getElementById('sliderInput').value;
-    var image = document.getElementById('sliderImage');
-    image.src = 'images/yoga' + sliderValue + '.jpg';
+    const sliderValue = document.getElementById('sliderInput').value;
+    const image = document.getElementById('sliderImage');
+    image.src = `images/yoga${sliderValue}.jpg`;
 }
 
+/*Toggle Menu*/
 
 function toggleMenu() {
-    var menu = document.getElementById('menu');
-    var togMenu = document.querySelector('.togmenu');
+    const menu = document.getElementById('menu');
+    const togMenu = document.querySelector('.togmenu');
 
     menu.classList.toggle('active');
     togMenu.classList.toggle('active');
