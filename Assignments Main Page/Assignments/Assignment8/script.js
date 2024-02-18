@@ -1,14 +1,14 @@
 /*Toggle Menu*/
-function toggleContent(contentId) {
-    const contents = document.querySelectorAll(".content");
-    contents.forEach(content => {
-        content.style.display = "none";
-    });
+const toggleContent = (contentId) => {
+    const contents = document.getElementsByClassName("content");
+    for (let i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+    }
     const selectedContent = document.getElementById("content" + contentId);
     if (selectedContent) {
         selectedContent.style.display = "block";
     }
-}
+};
 
 /*Exercise 1*/
 const e1 = (e) => {
@@ -37,14 +37,12 @@ const e1 = (e) => {
 document.getElementById("input").addEventListener("keyup", e1);
 
 /*Exercise 2*/
-
 function changeImage() {
     const sliderValue = document.getElementById('sliderInput').value;
     const image = document.getElementById('sliderImage');
-    image.src = `images/yoga${sliderValue}.jpg`;
+    image.src = 'images/yoga' + sliderValue + '.jpg';
 }
 
-/*Toggle Menu*/
 
 function toggleMenu() {
     const menu = document.getElementById('menu');
@@ -53,4 +51,3 @@ function toggleMenu() {
     menu.classList.toggle('active');
     togMenu.classList.toggle('active');
 }
-
