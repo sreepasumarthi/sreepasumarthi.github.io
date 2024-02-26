@@ -1,0 +1,108 @@
+ER Simulation Case
+Introduction
+In this case, we will analyze a local hospital’s ER process by observing the midnight shift (12:00 AM - 8:00 AM), during which one customer arrives every 12 minutes, following an exponential distribution. To do so, we will construct process maps – which include an entrance, buffers, workstations, and decision points – and run multiple simulation models 200 times using the SimQuick software. Based on these results, we will focus on identifying and modifying the bottleneck. Along with this, we will observe how the bottleneck is impacted if the interarrival time decreases from 12 to 10 minutes. Lastly, we will provide recommendations to improve the process, along with the costs and trade-offs associated with them.
+Simulation Analysis
+In the current state of the process, it would take a customer approximately 57.37 minutes to move through the desk, x-ray, and lab workstations (See Exhibit 1.1). We identified the lab workstation to be the bottleneck because it has the highest utilization rate of 82% and the highest mean waiting time of 48 minutes (See Exhibit 2.1). Comparatively, the other workstations are significantly lower for both utilization and mean waiting time, so the point of focus should be on improving the capacity of the lab workstation. Since the utilization rate is quickly approaching 100%, this workstation will be unable to accommodate increasing customer flow or any kind of customer variability remaining as-is. While a high utilization rate means that the resource is being used frequently, it can also lead to congestion and delays if the system is not able to handle the demand. This is occurring at the lab workstation. 
+We ran a second simulation where we decreased interarrival time from 12 to 10 minutes in order to observe the impact of increased customer flow on the bottleneck workstation. The other workstations noticed slight increases in utilization and mean waiting times, but the lab workstation experienced a significant spike in utilization (now 89%) and mean waiting time (now 77.22 minutes), demonstrating its inability to cope with increased demand (See Exhibit 2.2). The time to flow through the desk, x-ray, and lab workstations increased from 57.37 minutes to 88.86 minutes (See Exhibit 1.2). 
+Recommendations
+	The final simulation our team ran included adding a second lab workstation to note the effect of inventory pooling on the utilization and mean waiting time. By maintaining a single lab line that flowed into two separate lab workstations, utilization and mean waiting time drastically dropped. The waiting time for the lab now sits around 4 minutes compared to the original output of 48 minutes, and the utilization for each workstation is low enough to handle and adjust to customer variability (See Exhibits 2.1 and 2.3). The time through the desk, x-ray, and lab workstations is 12.33 minutes compared to the current state of 57.37 minutes (See Exhibits 1.1 and 1.3). This poses a 45-minute difference. Duplicating the lab workstation is a more costly recommendation due to the need for added personnel, training, and resources required for its operation. While this would dramatically improve the flow and throughput of the ER, we have also considered selecting low-cost process improvement recommendations to be implemented if a second workstation is not a viable option. 
+	One consideration would be to streamline the lab workflow. This would require identifying workflow bottlenecks specific to the lab process and can include reducing the wait time between steps, optimizing the placement of equipment, and improving communication between team members. Another consideration would be to identify steps that can be standardized. An example of this would be to create standard operating procedures (SOPs) for common lab tests or procedures if not already in place, which would help to reduce variability and improve efficiency. While this approach is lower in cost, it may require significant investment in time and effort – streamlining and standardizing processes can take multiple rounds of testing and once solidified, employee training and implementation may add on more time to complete this approach. As for improving team member communication, it is likely that management needs to put in a significant effort to boost effective communication (between the different departments as well), and these efforts and their impacts on all stakeholders can take a long time to assess. 
+As a consultant team, we believe the best course of action would be to standardize certain processes as 
+Simulation Case
+
+Within your report, please analyze and comment upon the following:
+Build an initial simulation using the above parameters and run 200 simulations.  Report out the utilization for each workstation, the mean waiting time before each workstation and find the bottleneck of the process. 
+Cambrie Results:
+Utilization (fraction time working):
+Desk: 0.25 = 25%
+Lab: 0.82 = 82%
+X-Ray: 0.46 =46%
+Ambulatory: 0.51 = 51% 
+Mean waiting times (mean cycle time):
+Desk Line: 0.48 min
+Lab Line: 48.21 min
+X-Ray Line: 8.68 min
+Ambulatory Line: 8.14 min
+2 Labs
+Utilization (fraction time working):
+Desk: 25%
+Lab 1: 57%
+Lab 2: 39%
+X-Ray: 45%
+Ambulatory: 51%
+Mean waiting times (mean cycle time):
+Desk Line: 0.48 min
+Lab Line: 4.22 min
+X-Ray Line: 7.63 min
+Ambulatory Line: 8.38 min
+Interarrival time of 10 minutes
+Utilization (fraction time working):
+Desk: 30%
+Lab: 89%
+X-Ray: 53%
+Ambulatory: 61%
+Mean waiting times (mean cycle time):
+Desk Line: 0.63 min
+Lab Line: 77.22 min
+X-Ray Line: 11.01 min
+Ambulatory Line: 12.83 min
+
+
+Sree’s Results:
+Utilization (fraction time working):
+Desk: 0.25 = 25%
+Lab: 0.44 = 0.80 = 80%
+X-Ray: 0.44 = 44%
+Ambulatory: 0.53 = 53%
+Mean waiting times (mean cycle time):
+Desk Line: 0.52 minutes
+Lab Line: 51.61 minutes
+X-Ray Line: 7.17 minutes
+Ambulatory Line: 8.48 minutes 
+
+Once you have found the bottleneck, management wants to know the effect of doubling the capacity of the bottleneck.  (That is, adding a second, identical Workstation).  Run the model again and report how the previous statistics (utilization, wait times, time through the system following desk -> x ray -> lab -> release) have changed, and if the bottleneck has changed.
+Bottleneck: Lab (highest utilization)
+Effect of doubling the capacity of the bottleneck:
+Utilization (fraction time working):
+Desk: 0.25 = 25%
+Lab Workstation 1: 0.56 = 56%
+Lab Workstation 2: 0.38 = 38%
+X-Ray: 0.45 = 45%
+Ambulatory: 0.49 = 49%
+Mean waiting times (mean cycle time):
+Desk Line: 0.47 minutes
+Lab Line: 3.34 minutes
+X-Ray Line: 7.59 minutes
+Ambulatory Line: 7.48 minutes
+
+Go back to the original layout (no doubling of the bottleneck capacity).  Management wants to know the effect if time between arrivals drops from 12 minutes to 10 minutes.  Re-run the model and report the same statistics as before. 
+
+
+Provide these results in a professionally written report to management. Be sure to include an introductory paragraph and end with conclusions and recommendations.  The SimQuick diagram and any detailed calculations should be included in the appendix.
+
+Notes:
+Bottleneck: 
+For utilization, we’re concerned with the workstations
+We want the most expensive parts to be the bottlenecks
+Bottleneck without doubling workstations: Desk (because least utilization)
+Doubling the capacity of the Desk workstation
+
+
+
+Also, what is the average time through the system for a patient that takes the following path:  desk -> xray -> lab -> release?
+
+Current state
+Desk Line: 0.48 min
+Lab Line: 48.21 min
+X-Ray Line: 8.68 min
+57.37 minutes
+Interarrival of 10 mins
+Desk Line: 0.63 min
+Lab Line: 77.22 min
+X-Ray Line: 11.01 min
+88.86 minutes
+2 Labs
+Desk Line: 0.48 min
+Lab Line: 4.22 min
+X-Ray Line: 7.63 min
+12.33 minutes
