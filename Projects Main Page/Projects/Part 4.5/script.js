@@ -10,13 +10,12 @@ hamMenu.addEventListener("click", () => {
 });
 
 /*Accordion*/
-var acc = document.getElementsByClassName("accordion");
-var i;
+const accordions = document.getElementsByClassName("accordion");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+for (let i = 0; i < accordions.length; i++) {
+  accordions[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
+    const panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
@@ -24,5 +23,36 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+/*Preview Pages*/
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".size");
+  const popup = document.getElementById("popup");
+  const popupContent = document.querySelector(".popup-content");
+  let close = document.querySelector(".close");
+
+  images.forEach((image) => {
+      image.addEventListener("click", () => {
+          const text = image.getAttribute("data-text");
+          popupContent.innerHTML = `<span class='close'>&times;</span><p>${text}</p>`;
+          popup.style.display = "block";
+
+          close = document.querySelector(".close"); // Reassign close after it's added dynamically
+          close.addEventListener("click", () => {
+              popup.style.display = "none";
+          });
+      });
+  });
+
+  window.addEventListener("click", (event) => {
+      if (event.target === popup) {
+          popup.style.display = "none";
+      }
+  });
+});
+
+
+
 
 

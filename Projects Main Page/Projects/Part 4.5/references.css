@@ -226,11 +226,12 @@ header {
 
 /* Style the dropdown button */
 .dropdown .dropdown-btn {
-    background-color: #3498db;
-    color: white;
+    background-color: white;
+    color:navy;
     padding: 10px;
-    font-size: 16px;
+    font-size: 13px;
     border: none;
+    width:100px;
     cursor: pointer;
 }
 
@@ -260,4 +261,9 @@ header {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*Input*/
+.input{
+    margin-top:20px;
 }
