@@ -1,0 +1,66 @@
+/*General*/
+body {
+    background-color:antiquewhite;
+}
+
+header {
+    color: purple;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#artist-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    background-color: lightgray;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid black;
+    max-width: 600px;
+}
+
+.exit {
+    color: purple;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.info img {
+    width: 200px;
+    height: 200px;
+    margin-left: 0px;
+    object-fit: cover;
+}
+
+.rcs img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.rcs h1 {
+    text-align: center; /* Align the text to the center */
+}
+
+.rcs {
+    color:purple;
+}
+
+
