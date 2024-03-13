@@ -2,10 +2,15 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--background);
+    background: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#houses-container {
+#main,#main2{
+    text-align: center;
+}
+
+#houses-section {
     max-width: 90%;
     margin: 10px auto;
     border-radius: 3px;
@@ -13,7 +18,7 @@ body {
 }
 
 section {
-    background: #1b74cd;
+    background: blanchedalmond;
     padding: 5px;
     border-radius: 2px;
     max-width: 90%;
@@ -37,8 +42,8 @@ img {
 }
 
 .floor-plan {
-    max-width: 100px; /* Adjust as needed */
-    margin: 5px; /* Adjust as needed */
+    max-width: 100px;
+    margin: 5px;
 }
 
 /* Typography */
