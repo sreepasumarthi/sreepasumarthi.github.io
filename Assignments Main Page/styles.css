@@ -47,7 +47,6 @@ img {
     color: white;
 }
 .underneath-aside {
-    text-align: left;
     color: white;
 }
 
@@ -65,4 +64,8 @@ footer {
         display: flex;
     }
 
+}
+
+#link1 {
+    margin-top:-100px;
 }
