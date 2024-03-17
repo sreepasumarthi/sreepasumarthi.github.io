@@ -1,0 +1,38 @@
+{
+    "projects": [
+      {
+        "_id": 1,
+        "title": "ER Simulation",
+        "technologies": ["Excel", "SimQuick", "ProcessModel"],
+        "authors": "Sree Pasumarthi",
+        "year": 2023,
+        "img_name": "er.png",
+        "description": "Analyzing a local hospital’s ER process by observing the midnight shift (12:00 AM - 8:00 AM)",
+        "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page", "Tom Hardy"],
+        "rating": 8.8
+      },
+      {
+        "_id": 2,
+        "title": "Midland Energy Case",
+        "technologies": ["Excel","R","Stata"],
+        "authors": "Sree Pasumarthi",
+        "year": 2023,
+        "img_name": "md.png",
+        "description": "Calculations of levered equity betas using comparable companies in E&P and M&R divisions",
+        "cast": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
+        "rating": 9.3
+      },
+      {
+        "_id": 3,
+        "title": "Cannimed Case",
+        "technologies": ["Excel", "R","Stata"],
+        "authors": "Sree Pasumarthi",
+        "year": 2023,
+        "img_name": "fin.png",
+        "description": "Recommendations based on financial analysis of a company's state for and IPO.",
+        "cast": ["Marlon Brando", "Al Pacino", "James Caan"],
+        "rating": 9.2
+      }
+    ]
+  }
+  
