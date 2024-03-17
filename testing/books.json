@@ -1,0 +1,85 @@
+{
+    "books": [
+      {
+        "_id": 1,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "year_published": 1960,
+        "img_name": "to_kill_a_mockingbird.jpg",
+        "description": "A novel set in the American South during the 1930s, addressing themes of racial injustice and moral growth.",
+        "chapters": ["Part One: Chapter 1", "Part One: Chapter 2", "Part One: Chapter 3"]
+      },
+      {
+        "_id": 2,
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian Fiction",
+        "year_published": 1949,
+        "img_name": "1984.jpg",
+        "description": "A dystopian novel set in a totalitarian regime, exploring themes of surveillance, government oppression, and individualism.",
+        "chapters": ["Part One: Chapter 1", "Part One: Chapter 2", "Part One: Chapter 3"]
+      },
+      {
+        "_id": 3,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Classic Literature",
+        "year_published": 1925,
+        "img_name": "the_great_gatsby.jpg",
+        "description": "A novel set in the Roaring Twenties, depicting the decadence and moral ambiguity of the American upper class.",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"]
+      },
+      {
+        "_id": 4,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Romance",
+        "year_published": 1813,
+        "img_name": "pride_and_prejudice.jpg",
+        "description": "A romantic novel set in Georgian England, revolving around the lives of the Bennet sisters and their suitors.",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"]
+      },
+      {
+        "_id": 5,
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "year_published": 1997,
+        "img_name": "harry_potter_and_the_philosophers_stone.jpg",
+        "description": "The first book in the Harry Potter series, following the journey of a young wizard, Harry Potter, as he attends Hogwarts School of Witchcraft and Wizardry.",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"]
+      },
+      {
+        "_id": 6,
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Coming-of-Age Fiction",
+        "year_published": 1951,
+        "img_name": "the_catcher_in_the_rye.jpg",
+        "description": "A novel narrated by Holden Caulfield, a disaffected teenager, who wanders through New York City while reflecting on his life and experiences.",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"]
+      },
+      {
+        "_id": 7,
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "genre": "Adventure Fiction",
+        "year_published": 1851,
+        "img_name": "moby_dick.jpg",
+        "description": "A novel following the journey of the narrator, Ishmael, and his obsessive quest for revenge against the elusive white whale, Moby Dick.",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"]
+      },
+      {
+        "_id": 8,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "year_published": 1937,
+        "img_name": "the_hobbit.jpg",
+        "description": "A fantasy novel following the adventures of Bilbo Baggins, a hobbit who embarks on a quest to reclaim the Lonely Mountain and its treasure from the dragon Smaug.",
+        "chapters": ["Chapter 1", "Chapter 2", "Chapter 3"]
+      }
+    ]
+  }
+  
