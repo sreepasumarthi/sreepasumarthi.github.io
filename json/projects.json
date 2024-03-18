@@ -44,7 +44,7 @@
     {
         "_id": 4,
         "title": "Sorel Case",
-        "img": "images/fin.png",
+        "img": "images/pm.png",
         "technologies": [
             "Lucid Chart",
             "ProcessModel",
@@ -58,7 +58,7 @@
     {
         "_id": 5,
         "title": "Ocean Carriers Case",
-        "img": "images/fin.png",
+        "img": "images/oc.png",
         "technologies": [
             "MS Excel",
             "R",
@@ -72,7 +72,7 @@
     {
         "_id": 6,
         "title": "Arches & Zion Case",
-        "img": "images/fin.png",
+        "img": "images/pm.png",
         "technologies": [
             "Lucid Chart",
             "ProcessModel",
@@ -86,7 +86,7 @@
     {
         "_id": 7,
         "title": "La Quinta Case",
-        "img": "images/fin.png",
+        "img": "images/er.png",
         "technologies": [
             "MS Excel",
             "Python",
@@ -100,7 +100,7 @@
     {
         "_id": 8,
         "title": "Intenseye Case",
-        "img": "images/fin.png",
+        "img": "images/oc.png",
         "technologies": [
             "Python",
             "R",
