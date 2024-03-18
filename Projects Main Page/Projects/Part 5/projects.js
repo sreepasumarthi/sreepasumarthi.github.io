@@ -1,76 +1,66 @@
-const getprojects = async () => {
-    const url = "https://sreepasumarthi.github.io/json/projects.json";
-  
-    try {
-      const response = await fetch(url);
-      return response.json();
-    } catch (error) {
-      alert(error)
-      console.log(error);
+// Fetch projects from the specified URL
+const obtainProjects = async () => {
+  const url = "https://sreepasumarthi.github.io/json/projects.json";
+
+  try {
+    const response = await fetch(url);
+    return response.json();
+  } catch (error) {
+    console.error("Error fetching projects:", error);
+  }
+};
+
+// Display the fetched projects
+const displayProjects = async () => {
+  const projects = await obtainProjects();
+  const projectsContainer = document.getElementById("projects-container");
+  projects.forEach((project) => {
+    projectsContainer.append(createProjectItem(project));
+  });
+};
+
+// Create a project item
+const createProjectItem = (project) => {
+  const section = document.createElement("section");
+  const imgDiv = document.createElement("div");
+
+  const image = document.createElement("img");
+  image.src = "https://sreepasumarthi.github.io/json/" + project.img;
+  image.classList.add("projimg");
+  imgDiv.append(image);
+
+  const textDiv = document.createElement("div");
+
+  const title = document.createElement("h2");
+  title.innerHTML = project.title;
+  title.classList.add("bold");
+  textDiv.append(title);
+
+  const technologies = document.createElement("p");
+  technologies.innerHTML = `<span class="bold">Technologies Used:</span> `;
+  project.technologies.forEach((tech, index) => {
+    technologies.innerHTML += tech;
+    if (index !== project.technologies.length - 1) {
+      technologies.innerHTML += ", ";
     }
-  };
+  });
+  textDiv.append(technologies);
   
-  const showprojects = async () => {
-    const projects = await getprojects();
-    
-    const projectsContainer = document.getElementById("projects-container");
-    projects.forEach((project) => {
-    
-     alert(project.technologies)
-      projectsContainer.append(getprojectItem(project));
-    });
-  };
-  
-  const getprojectItem = (project) => {
-    const section = document.createElement("section");
-    const imgDiv = document.createElement("div");
-  
-    const image = document.createElement("img");
-    image.src = "https://sreepasumarthi.github.io/json/images/" + project.img;
-    imgDiv.append(image);
-  
-    const textDiv = document.createElement("div");
-  
-    const title = document.createElement("h2");
-    title.innerHTML = project.title;
-    title.classList.add("bold");
-    textDiv.append(title);
+  const year = document.createElement("p");
+  year.innerHTML = project.schoolyear;
+  textDiv.append(year);
 
-    
-    const technologies = document.createElement("p");
-    technologies.innerHTML = `<span class="bold">Technologies Used:</span> `;
-    project.tech.forEach((tech) => {
-        technologies.innerHTML += tech;
-      if (tech != project.technologies[project.technologies.length - 1]) {
-        technologies.innerHTML += ", ";
-      }
-    });
-    textDiv.append(technologies);
+  const description = document.createElement("p");
+  description.innerHTML = project.description;
+  textDiv.append(description);
 
-    const schoolyear = document.createElement("p");
-    schoolyear.innerHTML = `<span class="bold">Year Completed:</span> ${project.schoolyear}`;
-    textDiv.append(schoolyear);
+  imgDiv.id = "project-img";
+  textDiv.id = "project-text";
 
-    const description = document.createElement("p");
-    description.innerHTML = project.description;
-    textDiv.append(description);
+  section.append(imgDiv);
+  section.append(textDiv);
+  return section;
+};
 
-    const modaldetails = document.createElement("p");
-    modaldetails.innerHTML = project.modaldetails;
-    textDiv.append(modaldetails);
-  
-    const course = document.createElement("p");
-    course.innerHTML = project.course;
-    textDiv.append(course);
-  
-    imgDiv.id = "project-img";
-    textDiv.id = "project-text";
-  
-    section.append(imgDiv);
-    section.append(textDiv);
-    alert("returning one section")
-    return section;
-  };
-  
-  window.onload = () => showprojects();
-  
+// Execute the displayProjects function when the window loads
+window.onload = () => displayProjects();

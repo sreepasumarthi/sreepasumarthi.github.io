@@ -40,5 +40,19 @@
         "modaldetails": "Cannimed Therapeutics (CMED) set themselves up for early success by being the first company (as PPS) to have successfully performed biosynthesis on plants that were being grown in underground copper and zinc mines, which provided the much needed security that the medical cannabis industry requires. They have led the market in pharmaceutical applications of cannabis by offering prescription pain medications that could be dosed through gelcaps, and are now looking to expand their market share potential while expanding their production and processing capabilities by seeking an IPO in order to raise $60 - $70 million.",
         "schoolyear": "2023",
         "course": "FINA"
+    },
+    {
+        "_id": 4,
+        "title": "Sorel Case",
+        "img": "images/fin.png",
+        "technologies": [
+            "Lucid Chart",
+            "ProcessModel",
+            "MS Excel"
+        ],
+        "description": "Recommendations based on financial analysis of a company's state for and IPO.",
+        "modaldetails": "Cannimed Therapeutics (CMED) set themselves up for early success by being the first company (as PPS) to have successfully performed biosynthesis on plants that were being grown in underground copper and zinc mines, which provided the much needed security that the medical cannabis industry requires. They have led the market in pharmaceutical applications of cannabis by offering prescription pain medications that could be dosed through gelcaps, and are now looking to expand their market share potential while expanding their production and processing capabilities by seeking an IPO in order to raise $60 - $70 million.",
+        "schoolyear": "2023",
+        "course": "FINA"
     }
 ]
