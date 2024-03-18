@@ -1,5 +1,5 @@
 const getMovies = async () => {
-    const url = "https://sreepasumarthi.github.io/testing/json/movies.json";
+    const url = "https://sreepasumarthi.github.io/testing/json/projects.json";
 
 
     try {
@@ -51,15 +51,15 @@ const getMovieItem = (movie) => {
     year.innerHTML = `<span class="bold">Year Released:</span> ${movie.year}`;
     textDiv.append(year);
 
-    const genres = document.createElement("p");
-    genres.innerHTML = `<span class="bold">Genres:</span> `;
-    movie.genres.forEach((genre) => {
-        genres.innerHTML += genre;
-        if (genre != movie.genres[movie.genres.length - 1]) {
-            genres.innerHTML += ", ";
+    const techs = document.createElement("p");
+    techs.innerHTML = `<span class="bold">techs:</span> `;
+    movie.techs.forEach((tech) => {
+        techs.innerHTML += tech;
+        if (tech != movie.techs[movie.techs.length - 1]) {
+            techs.innerHTML += ", ";
         }
     });
-    textDiv.append(genres);
+    textDiv.append(techs);
 
     const description = document.createElement("p");
 
