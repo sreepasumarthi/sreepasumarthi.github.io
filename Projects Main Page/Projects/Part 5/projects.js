@@ -1,4 +1,4 @@
-const getMovies = async () => {
+const getprojects = async () => {
     const url = "https://sreepasumarthi.github.io/json/projects.json";
   
     try {
@@ -9,11 +9,11 @@ const getMovies = async () => {
     }
   };
   
-  const showMovies = async () => {
-    const movies = await getMovies();
-    const moviesContainer = document.getElementById("movies-container");
-    movies.forEach((movie) => {
-      moviesContainer.append(getMovieItem(movie));
+  const showprojects = async () => {
+    const projects = await getprojects();
+    const projectsContainer = document.getElementById("projects-container");
+    projects.forEach((movie) => {
+      projectsContainer.append(getMovieItem(movie));
     });
   };
   
@@ -73,4 +73,4 @@ const getMovies = async () => {
     return section;
   };
   
-  window.onload = () => showMovies();
+  window.onload = () => showprojects();
