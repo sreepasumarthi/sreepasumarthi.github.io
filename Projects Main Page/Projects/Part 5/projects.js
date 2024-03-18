@@ -15,13 +15,8 @@ const getprojects = async () => {
     
     const projectsContainer = document.getElementById("projects-container");
     projects.forEach((project) => {
-    alert(project.title)
-    alert(project.img)
-    alert(project.technologies)
-    alert(project.description)
-    alert(project.modaldetails)
-    alert(project.schoolyear)
-    alert(project.course)
+    
+     alert(project.technologies)
       projectsContainer.append(getprojectItem(project));
     });
   };
@@ -73,6 +68,7 @@ const getprojects = async () => {
   
     section.append(imgDiv);
     section.append(textDiv);
+    alert("returning one section")
     return section;
   };
   

@@ -1,33 +1,44 @@
 [
     {
         "_id": 1,
-      "title":"ER Simulation",
-      "img":"images/er.png",
-      "technologies":["MS Excel", "SimQuick", "ProcessModel"],
-      "description":"Analyzing a local hospital’s ER process by observing the midnight shift (12:00 AM - 8:00 AM)",
-      "modaldetails":"In this case, we will analyze a local hospital’s ER process by observing the midnight shift (12:00 AM - 8:00 AM), during which one customer arrives every 12 minutes, following an exponential distribution. To do so, we will construct process maps – which include an entrance, buffers, workstations, and decision points – and run multiple simulation models 200 times using the SimQuick software. Based on these results, we will focus on identifying and modifying the bottleneck. Along with this, we will observe how the bottleneck is impacted if the interarrival time decreases from 12 to 10 minutes. Lastly, we will provide recommendations to improve the process, along with the costs and trade-offs associated with them.",
-      "schoolyear":"2021",
-      "course":"MGSC"
+        "title": "ER Simulation",
+        "img": "images/er.png",
+        "technologies": [
+            "MS Excel",
+            "SimQuick",
+            "ProcessModel"
+        ],
+        "description": "Analyzing a local hospital’s ER process by observing the midnight shift (12:00 AM - 8:00 AM)",
+        "modaldetails": "In this case, we will analyze a local hospital’s ER process by observing the midnight shift (12:00 AM - 8:00 AM), during which one customer arrives every 12 minutes, following an exponential distribution. To do so, we will construct process maps – which include an entrance, buffers, workstations, and decision points – and run multiple simulation models 200 times using the SimQuick software. Based on these results, we will focus on identifying and modifying the bottleneck. Along with this, we will observe how the bottleneck is impacted if the interarrival time decreases from 12 to 10 minutes. Lastly, we will provide recommendations to improve the process, along with the costs and trade-offs associated with them.",
+        "schoolyear": "2021",
+        "course": "MGSC"
     },
     {
         "_id": 2,
-      "title":"Midland Energy Case",
-      "img":"images/md.png",
-      "technologies":["MS Excel", "R", "Stata"],
-      "description":"Calculations of levered equity betas using comparable companies in E&P and M&R divisions",
-      "modaldetails":"Midland Energy Resources, Inc. is a global energy company that operates in oil and gas exploration (E&P), refining and marketing (R&M), and petrochemicals. Of the three segments, E&P is the most profitable, accounting for most of the net income. The largest segment is R&M and the smallest is petrochemicals. Midland’s main goal is to develop a financial strategy that is based on four pillars: overseas growth, value-creating projects, capital structure optimization, and the repurchase of undervalued shares.",
-      "schoolyear":"2022",
-      "course":"FINA"
+        "title": "Midland Energy Case",
+        "img": "images/md.png",
+        "technologies": [
+            "MS Excel",
+            "R",
+            "Stata"
+        ],
+        "description": "Calculations of levered equity betas using comparable companies in E&P and M&R divisions",
+        "modaldetails": "Midland Energy Resources, Inc. is a global energy company that operates in oil and gas exploration (E&P), refining and marketing (R&M), and petrochemicals. Of the three segments, E&P is the most profitable, accounting for most of the net income. The largest segment is R&M and the smallest is petrochemicals. Midland’s main goal is to develop a financial strategy that is based on four pillars: overseas growth, value-creating projects, capital structure optimization, and the repurchase of undervalued shares.",
+        "schoolyear": "2022",
+        "course": "FINA"
     },
     {
         "_id": 3,
-      "title":"Cannimed Case",
-      "img":"images/fin.png",
-      "technologies":["MS Excel", "R", "Stata"],
-      "description":"Recommendations based on financial analysis of a company's state for and IPO.",
-      "modaldetails":"Cannimed Therapeutics (CMED) set themselves up for early success by being the first company (as PPS) to have successfully performed biosynthesis on plants that were being grown in underground copper and zinc mines, which provided the much needed security that the medical cannabis industry requires. They have led the market in pharmaceutical applications of cannabis by offering prescription pain medications that could be dosed through gelcaps, and are now looking to expand their market share potential while expanding their production and processing capabilities by seeking an IPO in order to raise $60 - $70 million.",
-      "schoolyear":"2023",
-      "course":"FINA"
+        "title": "Cannimed Case",
+        "img": "images/fin.png",
+        "technologies": [
+            "MS Excel",
+            "R",
+            "Stata"
+        ],
+        "description": "Recommendations based on financial analysis of a company's state for and IPO.",
+        "modaldetails": "Cannimed Therapeutics (CMED) set themselves up for early success by being the first company (as PPS) to have successfully performed biosynthesis on plants that were being grown in underground copper and zinc mines, which provided the much needed security that the medical cannabis industry requires. They have led the market in pharmaceutical applications of cannabis by offering prescription pain medications that could be dosed through gelcaps, and are now looking to expand their market share potential while expanding their production and processing capabilities by seeking an IPO in order to raise $60 - $70 million.",
+        "schoolyear": "2023",
+        "course": "FINA"
     }
-
-  ]
+]
