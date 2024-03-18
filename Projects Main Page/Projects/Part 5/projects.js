@@ -1,4 +1,3 @@
-// Fetch projects from the specified URL
 const obtainProjects = async () => {
   const url = "https://sreepasumarthi.github.io/json/projects.json";
 
@@ -37,9 +36,9 @@ const createProjectItem = (project) => {
   const textDiv = document.createElement("div");
 
   const title = document.createElement("h2");
-  title.innerHTML = project.title;
-  title.classList.add("bold");
-  textDiv.append(title);
+title.textContent = project.title;
+title.classList.add("bold");
+textDiv.append(title);
 
   const year = document.createElement("p");
   year.innerHTML = project.schoolyear;
@@ -50,17 +49,12 @@ const createProjectItem = (project) => {
   textDiv.append(course);
 
   const technologies = document.createElement("p");
-technologies.innerHTML = `<span class="bold">Technologies Used:</span> ${project.technologies.join(", ")}`;
-textDiv.append(technologies);
-
-
+  technologies.innerHTML = `<span class="bold">Technologies Used:</span> ${project.technologies.join(", ")}`;
+  textDiv.append(technologies);
 
   const description = document.createElement("p");
-  description.innerHTML = project.description;
+  description.textContent = project.description;
   textDiv.append(description);
-
-  imgDiv.id = "project-img";
-  textDiv.id = "project-text";
 
   section.append(imgDiv);
   section.append(textDiv);
