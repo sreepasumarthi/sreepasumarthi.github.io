@@ -175,6 +175,11 @@ section {
   width: 400px;
 }
 
+#simple {
+  text-align: center;
+  color: white;
+}
+
 section {
   background: #1b74cd;
   border-top: 1px solid white;

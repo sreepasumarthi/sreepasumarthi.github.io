@@ -50,14 +50,9 @@ const createProjectItem = (project) => {
   textDiv.append(course);
 
   const technologies = document.createElement("p");
-  technologies.innerHTML = `<span class="bold">Technologies Used:</span> `;
-  project.technologies.forEach((tech, index) => {
-    technologies.innerHTML += tech;
-    if (index !== project.technologies.length - 1) {
-      technologies.innerHTML += ", ";
-    }
-  });
-  textDiv.append(technologies);
+technologies.innerHTML = `<span class="bold">Technologies Used:</span> ${project.technologies.join(", ")}`;
+textDiv.append(technologies);
+
 
 
   const description = document.createElement("p");
