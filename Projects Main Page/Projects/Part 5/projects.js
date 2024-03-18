@@ -1,18 +1,27 @@
 const getprojects = async () => {
-    const url = "https://portiaportia.github.io/json/projects.json";
+    const url = "https://sreepasumarthi.github.io/json/projects.json";
   
     try {
       const response = await fetch(url);
       return response.json();
     } catch (error) {
+      alert(error)
       console.log(error);
     }
   };
   
   const showprojects = async () => {
     const projects = await getprojects();
+    
     const projectsContainer = document.getElementById("projects-container");
     projects.forEach((project) => {
+    alert(project.title)
+    alert(project.img)
+    alert(project.technologies)
+    alert(project.description)
+    alert(project.modaldetails)
+    alert(project.schoolyear)
+    alert(project.course)
       projectsContainer.append(getprojectItem(project));
     });
   };
@@ -22,7 +31,7 @@ const getprojects = async () => {
     const imgDiv = document.createElement("div");
   
     const image = document.createElement("img");
-    image.src = "https://portiaportia.github.io/json/" + project.img;
+    image.src = "https://sreepasumarthi.github.io/json/images/" + project.img;
     imgDiv.append(image);
   
     const textDiv = document.createElement("div");
@@ -43,31 +52,21 @@ const getprojects = async () => {
     });
     textDiv.append(technologies);
 
+    const schoolyear = document.createElement("p");
+    schoolyear.innerHTML = `<span class="bold">Year Completed:</span> ${project.schoolyear}`;
+    textDiv.append(schoolyear);
 
-  
-    const director = document.createElement("p");
-    director.innerHTML = `<span class="bold">Director:</span> ${project.director}`;
-    textDiv.append(director);
-  
-    const actors = document.createElement("p");
-    actors.innerHTML = `<span class="bold">Actors:</span> `;
-    project.actors.forEach((actor) => {
-      actors.innerHTML += actor;
-      if (actor != project.actors[project.actors.length - 1]) {
-        actors.innerHTML += ", ";
-      }
-    });
-    textDiv.append(actors);
-  
-    const year = document.createElement("p");
-    year.innerHTML = `<span class="bold">Year Released:</span> ${project.year}`;
-    textDiv.append(year);
-  
-  
     const description = document.createElement("p");
-  
     description.innerHTML = project.description;
     textDiv.append(description);
+
+    const modaldetails = document.createElement("p");
+    modaldetails.innerHTML = project.modaldetails;
+    textDiv.append(modaldetails);
+  
+    const course = document.createElement("p");
+    course.innerHTML = project.course;
+    textDiv.append(course);
   
     imgDiv.id = "project-img";
     textDiv.id = "project-text";
@@ -78,3 +77,4 @@ const getprojects = async () => {
   };
   
   window.onload = () => showprojects();
+  
