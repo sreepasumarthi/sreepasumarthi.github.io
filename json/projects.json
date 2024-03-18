@@ -54,5 +54,61 @@
         "modaldetails": "Cannimed Therapeutics (CMED) set themselves up for early success by being the first company (as PPS) to have successfully performed biosynthesis on plants that were being grown in underground copper and zinc mines, which provided the much needed security that the medical cannabis industry requires. They have led the market in pharmaceutical applications of cannabis by offering prescription pain medications that could be dosed through gelcaps, and are now looking to expand their market share potential while expanding their production and processing capabilities by seeking an IPO in order to raise $60 - $70 million.",
         "schoolyear": "2023",
         "course": "FINA"
+    },
+    {
+        "_id": 5,
+        "title": "Ocean Carriers Case",
+        "img": "images/fin.png",
+        "technologies": [
+            "MS Excel",
+            "R",
+            "Stata"
+        ],
+        "description": "Recommending whether or not to commission a new carrier, and the amount of time this asset will be held.",
+        "modaldetails": "Ocean Carriers is an international shipping company that operates capesize dry bulk carriers to transport materials such as coal and iron ore worldwide. The business operation model relies mainly on time – chartering vessels on a “time charter” or “spot charter” basis. The charterer pays a daily hire rate for the duration of the contract and determines the materials transported. In turn, Ocean Carriers provides a seaworthy vessel, compliant with international regulations. Currently, Ocean Carriers is considering a lease proposal for a ship over three years, beginning in 2003. However, Ocean Carriers does not possess ships in its fleet that meet the customer’s expectations. This report serves to guide Mary Linn, Vice President of Finance for Ocean Carriers, to decide whether or not to commission a new carrier, and the amount of time this asset will be held.",
+        "schoolyear": "2023",
+        "course": "FINA"
+    },
+    {
+        "_id": 6,
+        "title": "Arches & Zion Case",
+        "img": "images/fin.png",
+        "technologies": [
+            "Lucid Chart",
+            "ProcessModel",
+            "MS Excel"
+        ],
+        "description": "Improving the flow at the bottleneck steps to increase throughput",
+        "modaldetails": "Arches National Park and Zion National Park are two of the most visited National Parks in the United States. Visitors from around the country and world flock to Utah to absorb all the state has to offer with its beautiful backdrops and scenic attractions. However, as these parks become more well-known for their beauty, problems regarding visitor experience arise, including long wait times, congested parking areas, and poor bathroom maintenance to name a few. Besides the customer side of the visitor experience being poor, the environmental condition of these parks is taking a hit as well. With longer waiting times to view the attractions, social trails are created, which can damage soil and kill vegetation. To tackle these problems, we will look at managing capacity as the main target.",
+        "schoolyear": "2023",
+        "course": "FINA"
+    },
+    {
+        "_id": 7,
+        "title": "Arches & Zion Case",
+        "img": "images/fin.png",
+        "technologies": [
+            "Lucid Chart",
+            "ProcessModel",
+            "MS Excel"
+        ],
+        "description": "Improving the flow at the bottleneck steps to increase throughput",
+        "modaldetails": "Arches National Park and Zion National Park are two of the most visited National Parks in the United States. Visitors from around the country and world flock to Utah to absorb all the state has to offer with its beautiful backdrops and scenic attractions. However, as these parks become more well-known for their beauty, problems regarding visitor experience arise, including long wait times, congested parking areas, and poor bathroom maintenance to name a few. Besides the customer side of the visitor experience being poor, the environmental condition of these parks is taking a hit as well. With longer waiting times to view the attractions, social trails are created, which can damage soil and kill vegetation. To tackle these problems, we will look at managing capacity as the main target.",
+        "schoolyear": "2023",
+        "course": "FINA"
+    },
+    {
+        "_id": 8,
+        "title": "Arches & Zion Case",
+        "img": "images/fin.png",
+        "technologies": [
+            "Lucid Chart",
+            "ProcessModel",
+            "MS Excel"
+        ],
+        "description": "Improving the flow at the bottleneck steps to increase throughput",
+        "modaldetails": "Arches National Park and Zion National Park are two of the most visited National Parks in the United States. Visitors from around the country and world flock to Utah to absorb all the state has to offer with its beautiful backdrops and scenic attractions. However, as these parks become more well-known for their beauty, problems regarding visitor experience arise, including long wait times, congested parking areas, and poor bathroom maintenance to name a few. Besides the customer side of the visitor experience being poor, the environmental condition of these parks is taking a hit as well. With longer waiting times to view the attractions, social trails are created, which can damage soil and kill vegetation. To tackle these problems, we will look at managing capacity as the main target.",
+        "schoolyear": "2023",
+        "course": "FINA"
     }
 ]

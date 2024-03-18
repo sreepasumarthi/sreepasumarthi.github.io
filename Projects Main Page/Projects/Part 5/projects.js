@@ -10,16 +10,21 @@ const obtainProjects = async () => {
   }
 };
 
-// Display the fetched projects
 const displayProjects = async () => {
   const projects = await obtainProjects();
   const projectsContainer = document.getElementById("projects-container");
   projects.forEach((project) => {
     projectsContainer.append(createProjectItem(project));
   });
+
+  const projectImages = document.querySelectorAll(".projimg");
+  projectImages.forEach((img, index) => {
+    img.addEventListener("click", () => {
+      displayModal(projects[index]);
+    });
+  });
 };
 
-// Create a project item
 const createProjectItem = (project) => {
   const section = document.createElement("section");
   const imgDiv = document.createElement("div");
@@ -45,7 +50,7 @@ const createProjectItem = (project) => {
     }
   });
   textDiv.append(technologies);
-  
+
   const year = document.createElement("p");
   year.innerHTML = project.schoolyear;
   textDiv.append(year);
@@ -62,5 +67,22 @@ const createProjectItem = (project) => {
   return section;
 };
 
-// Execute the displayProjects function when the window loads
+const displayModal = (project) => {
+  const modal = document.getElementById("myModal");
+  const modalText = document.getElementById("modal-text");
+  modalText.innerHTML = project.modaldetails;
+  modal.style.display = "block";
+
+  const closeButton = document.getElementsByClassName("close")[0];
+  closeButton.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+};
+
 window.onload = () => displayProjects();

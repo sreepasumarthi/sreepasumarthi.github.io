@@ -1,5 +1,3 @@
-/*Header*/
-
 body {
   color: white;
   background: rgb(6, 36, 126);
@@ -13,7 +11,7 @@ header {
 }
 
 #logo {
-  padding-top:10px;
+  padding-top: 10px;
   padding-left: 50px;
 }
 
@@ -38,38 +36,36 @@ header {
   color: white;
 }
 
-/*Smaller Resolutions*/
-
 @media (max-width:900px) {
 
   #list {
-      display: none;
+    display: none;
   }
 
   #main-content h1 {
-      font-size: 50px;
-      margin-left: -40px;
+    font-size: 50px;
+    margin-left: -40px;
   }
 
   #main-content p {
-      margin-left: -40px;
+    margin-left: -40px;
   }
 
   #main-content {
-      margin-top: 90px;
+    margin-top: 90px;
   }
 
   body {
-      background: rgb(6, 36, 126);
-      background: linear-gradient(90deg, rgba(6, 36, 126, 1) 0%, rgba(25, 128, 223, 1) 100%);
-      background-size: auto;
-      background-position: center;
+    background: rgb(6, 36, 126);
+    background: linear-gradient(90deg, rgba(6, 36, 126, 1) 0%, rgba(25, 128, 223, 1) 100%);
+    background-size: auto;
+    background-position: center;
   }
 
 
 }
 
-/*Menu*/
+
 .off-screen-menu {
   background: rgb(6, 36, 126);
   background: linear-gradient(90deg, rgba(6, 36, 126, 1) 0%, rgba(25, 128, 223, 1) 100%);
@@ -106,7 +102,6 @@ header {
   color: lightgray;
 }
 
-/* ham menu */
 .ham-menu {
   height: 50px;
   width: 40px;
@@ -158,38 +153,75 @@ header {
 
 @media (min-width: 900px) {
   .ham-menu {
-      display: none;
+    display: none;
   }
 }
 
-/*HERE*/
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-.projimg{
+section {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.projimg {
   max-height: 250px;
   width: 400px;
 }
-  
-  /* Structure */
-  section {
-    background: #1b74cd;
-    border-top:1px solid white;
-    border-bottom:1px solid white;
-    border-left:1px solid white;
-    border-right:1px solid white;
-    padding: 5px;
-    border-radius: 5px;
-    max-width: 90%;
-    margin: 20px auto;
-  }
-  
-  #movie-text {
-    flex: 8;
-    padding: 0 10px 0 10px;
-  }
-  
-  /*Typography*/
-  .bold {
-    font-weight: bold;
-  }
 
-  
+section {
+  background: #1b74cd;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  color: black;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
