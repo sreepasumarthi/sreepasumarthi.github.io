@@ -67,7 +67,7 @@
         "description": "Recommending whether or not to commission a new carrier, and the amount of time this asset will be held.",
         "modaldetails": "Ocean Carriers is an international shipping company that operates capesize dry bulk carriers to transport materials such as coal and iron ore worldwide. The business operation model relies mainly on time – chartering vessels on a “time charter” or “spot charter” basis. The charterer pays a daily hire rate for the duration of the contract and determines the materials transported. In turn, Ocean Carriers provides a seaworthy vessel, compliant with international regulations. Currently, Ocean Carriers is considering a lease proposal for a ship over three years, beginning in 2003. However, Ocean Carriers does not possess ships in its fleet that meet the customer’s expectations. This report serves to guide Mary Linn, Vice President of Finance for Ocean Carriers, to decide whether or not to commission a new carrier, and the amount of time this asset will be held.",
         "schoolyear": "2023",
-        "course": "FINA"
+        "course": "ECON"
     },
     {
         "_id": 6,
@@ -81,34 +81,34 @@
         "description": "Improving the flow at the bottleneck steps to increase throughput",
         "modaldetails": "Arches National Park and Zion National Park are two of the most visited National Parks in the United States. Visitors from around the country and world flock to Utah to absorb all the state has to offer with its beautiful backdrops and scenic attractions. However, as these parks become more well-known for their beauty, problems regarding visitor experience arise, including long wait times, congested parking areas, and poor bathroom maintenance to name a few. Besides the customer side of the visitor experience being poor, the environmental condition of these parks is taking a hit as well. With longer waiting times to view the attractions, social trails are created, which can damage soil and kill vegetation. To tackle these problems, we will look at managing capacity as the main target.",
         "schoolyear": "2023",
-        "course": "FINA"
+        "course": "MGSC"
     },
     {
         "_id": 7,
-        "title": "Arches & Zion Case",
+        "title": "La Quinta Case",
         "img": "images/fin.png",
         "technologies": [
-            "Lucid Chart",
-            "ProcessModel",
-            "MS Excel"
+            "MS Excel",
+            "Python",
+            "R"
         ],
-        "description": "Improving the flow at the bottleneck steps to increase throughput",
-        "modaldetails": "Arches National Park and Zion National Park are two of the most visited National Parks in the United States. Visitors from around the country and world flock to Utah to absorb all the state has to offer with its beautiful backdrops and scenic attractions. However, as these parks become more well-known for their beauty, problems regarding visitor experience arise, including long wait times, congested parking areas, and poor bathroom maintenance to name a few. Besides the customer side of the visitor experience being poor, the environmental condition of these parks is taking a hit as well. With longer waiting times to view the attractions, social trails are created, which can damage soil and kill vegetation. To tackle these problems, we will look at managing capacity as the main target.",
+        "description": "Main conflict: Should “gut feel” augment regression model, or vice versa? What factors could not be modeled by a regression?",
+        "modaldetails": "Measure for a “good” hotel: Occupancy = The ratio of average rented rooms to total rooms. It is a widely used statistic in hotel administration. Profit = The bookkeeping methods used allowed each inn to be a profit center, so profit data were available. Operating margin in 1983 or 1986 = A percentage measure that consists of adding depreciation and interest expenses to the profit of an inn and dividing by the total revenue.",
         "schoolyear": "2023",
         "course": "FINA"
     },
     {
         "_id": 8,
-        "title": "Arches & Zion Case",
+        "title": "Intenseye Case",
         "img": "images/fin.png",
         "technologies": [
-            "Lucid Chart",
-            "ProcessModel",
-            "MS Excel"
+            "Python",
+            "R",
+            "Stata"
         ],
-        "description": "Improving the flow at the bottleneck steps to increase throughput",
-        "modaldetails": "Arches National Park and Zion National Park are two of the most visited National Parks in the United States. Visitors from around the country and world flock to Utah to absorb all the state has to offer with its beautiful backdrops and scenic attractions. However, as these parks become more well-known for their beauty, problems regarding visitor experience arise, including long wait times, congested parking areas, and poor bathroom maintenance to name a few. Besides the customer side of the visitor experience being poor, the environmental condition of these parks is taking a hit as well. With longer waiting times to view the attractions, social trails are created, which can damage soil and kill vegetation. To tackle these problems, we will look at managing capacity as the main target.",
-        "schoolyear": "2023",
-        "course": "FINA"
+        "description": "AI tool to help companies monitor, measure, and improve workers’ adherence to safety protocols. Risk reduction, lower costs, improved accuracy.",
+        "modaldetails": "Use case = A use case in product development is a description of how a user or a customer would interact with a product or service to accomplish a particular task or achieve a specific goal. It outlines the various steps involved in using the product or service and provides a detailed understanding of the user's needs and expectations.",
+        "schoolyear": "2024",
+        "course": "ECON"
     }
 ]

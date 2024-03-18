@@ -41,6 +41,14 @@ const createProjectItem = (project) => {
   title.classList.add("bold");
   textDiv.append(title);
 
+  const year = document.createElement("p");
+  year.innerHTML = project.schoolyear;
+  textDiv.append(year);
+
+  const course = document.createElement("p");
+  course.innerHTML = project.course;
+  textDiv.append(course);
+
   const technologies = document.createElement("p");
   technologies.innerHTML = `<span class="bold">Technologies Used:</span> `;
   project.technologies.forEach((tech, index) => {
@@ -51,9 +59,6 @@ const createProjectItem = (project) => {
   });
   textDiv.append(technologies);
 
-  const year = document.createElement("p");
-  year.innerHTML = project.schoolyear;
-  textDiv.append(year);
 
   const description = document.createElement("p");
   description.innerHTML = project.description;
