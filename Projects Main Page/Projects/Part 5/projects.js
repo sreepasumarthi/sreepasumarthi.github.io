@@ -1,5 +1,5 @@
-const getMovies = async () => {
-    const url = "https://sreepasumarthi.github.io/json/projects.json";
+const getprojects = async () => {
+    const url = "https://portiaportia.github.io/json/projects.json";
   
     try {
       const response = await fetch(url);
@@ -9,68 +9,72 @@ const getMovies = async () => {
     }
   };
   
-  const showMovies = async () => {
-    const movies = await getMovies();
-    const moviesContainer = document.getElementById("movies-container");
-    movies.forEach((movie) => {
-      moviesContainer.append(getMovieItem(movie));
+  const showprojects = async () => {
+    const projects = await getprojects();
+    const projectsContainer = document.getElementById("projects-container");
+    projects.forEach((project) => {
+      projectsContainer.append(getprojectItem(project));
     });
   };
   
-  const getMovieItem = (movie) => {
+  const getprojectItem = (project) => {
     const section = document.createElement("section");
     const imgDiv = document.createElement("div");
   
     const image = document.createElement("img");
-    image.src = "https://sreepasumarthi.github.io/json/projects.json/" + movie.img;
+    image.src = "https://portiaportia.github.io/json/" + project.img;
     imgDiv.append(image);
   
     const textDiv = document.createElement("div");
   
     const title = document.createElement("h2");
-    title.innerHTML = movie.title;
+    title.innerHTML = project.title;
     title.classList.add("bold");
     textDiv.append(title);
+
+    
+    const technologies = document.createElement("p");
+    technologies.innerHTML = `<span class="bold">Technologies Used:</span> `;
+    project.tech.forEach((tech) => {
+        technologies.innerHTML += tech;
+      if (tech != project.technologies[project.technologies.length - 1]) {
+        technologies.innerHTML += ", ";
+      }
+    });
+    textDiv.append(technologies);
+
+
   
-    const tech = document.createElement("p");
-    tech.innerHTML = `<span class="bold">Technologies Used:</span> ${projects.tech}`;
-    textDiv.append(tech);
+    const director = document.createElement("p");
+    director.innerHTML = `<span class="bold">Director:</span> ${project.director}`;
+    textDiv.append(director);
   
     const actors = document.createElement("p");
     actors.innerHTML = `<span class="bold">Actors:</span> `;
-    movie.actors.forEach((actor) => {
+    project.actors.forEach((actor) => {
       actors.innerHTML += actor;
-      if (actor != movie.actors[movie.actors.length - 1]) {
+      if (actor != project.actors[project.actors.length - 1]) {
         actors.innerHTML += ", ";
       }
     });
     textDiv.append(actors);
   
     const year = document.createElement("p");
-    year.innerHTML = `<span class="bold">Year Released:</span> ${movie.year}`;
+    year.innerHTML = `<span class="bold">Year Released:</span> ${project.year}`;
     textDiv.append(year);
   
-    const genres = document.createElement("p");
-    genres.innerHTML = `<span class="bold">Genres:</span> `;
-    movie.genres.forEach((genre) => {
-      genres.innerHTML += genre;
-      if (genre != movie.genres[movie.genres.length - 1]) {
-        genres.innerHTML += ", ";
-      }
-    });
-    textDiv.append(genres);
   
     const description = document.createElement("p");
   
-    description.innerHTML = movie.description;
+    description.innerHTML = project.description;
     textDiv.append(description);
   
-    imgDiv.id = "movie-img";
-    textDiv.id = "movie-text";
+    imgDiv.id = "project-img";
+    textDiv.id = "project-text";
   
     section.append(imgDiv);
     section.append(textDiv);
     return section;
   };
   
-  window.onload = () => showMovies();
+  window.onload = () => showprojects();

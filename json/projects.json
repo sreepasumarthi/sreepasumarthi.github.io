@@ -1,47 +1,33 @@
 [
     {
-      "title":"The Godfather",
-      "director": "Francis Ford Coppola",
-      "actors": ["Al Pacino","Marlon Brando","Robert Duvall"],
-      "year":"1972",
-      "genres":["Crime","Fiction","Drama"],
-      "description":"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son. -- Carl Schultz",
-      "img":"images/the-godfather.jpg"
+        "_id": 1,
+      "title":"ER Simulation",
+      "img":"images/er.png",
+      "tech":["MS Excel", "SimQuick", "ProcessModel"],
+      "description":"Analyzing a local hospital’s ER process by observing the midnight shift (12:00 AM - 8:00 AM)",
+      "modaldetails":"In this case, we will analyze a local hospital’s ER process by observing the midnight shift (12:00 AM - 8:00 AM), during which one customer arrives every 12 minutes, following an exponential distribution. To do so, we will construct process maps – which include an entrance, buffers, workstations, and decision points – and run multiple simulation models 200 times using the SimQuick software. Based on these results, we will focus on identifying and modifying the bottleneck. Along with this, we will observe how the bottleneck is impacted if the interarrival time decreases from 12 to 10 minutes. Lastly, we will provide recommendations to improve the process, along with the costs and trade-offs associated with them.",
+      "schoolyear":"2021",
+      "course":"MGSC"
     },
     {
-      "title":"The Shawshank Redemption",
-      "director": "Frank Darabont",
-      "actors": ["Morgan Freeman","Bob Gunton","Tim Robbins"],
-      "year":"1994",
-      "genres":["Drama","Mystery","Crime","Fiction"],
-      "description":"Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency. --IMDB",
-      "img":"images/the-shawshank-redemption.jpg"
+        "_id": 2,
+      "title":"Midland Energy Case",
+      "img":"images/md.png",
+      "tech":["MS Excel", "R", "Stata"],
+      "description":"Calculations of levered equity betas using comparable companies in E&P and M&R divisions",
+      "modaldetails":"Midland Energy Resources, Inc. is a global energy company that operates in oil and gas exploration (E&P), refining and marketing (R&M), and petrochemicals. Of the three segments, E&P is the most profitable, accounting for most of the net income. The largest segment is R&M and the smallest is petrochemicals. Midland’s main goal is to develop a financial strategy that is based on four pillars: overseas growth, value-creating projects, capital structure optimization, and the repurchase of undervalued shares.",
+      "schoolyear":"2022",
+      "course":"FINA"
     },
     {
-      "title":"Pulp Fiction",
-      "director": "Quentin Tarantino",
-      "actors": ["John Travolta", "Bruce Willis", "Uma Thurman"],
-      "year":"1994",
-      "genres":["Crime", "Drama"],
-      "description":"The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption. -- IMDB",
-      "img":"images/pulp-fiction.jpg"
-    },
-    {
-      "title":"The Dark Knight",
-      "director": "Christopher Nolan",
-      "actors": ["Christian Bale", "Michael Caine", "Heath Ledger"],
-      "year":"2008",
-      "genres":["Action", "Crime", "Fiction", "Drama", "Thriller","Noir"],
-      "description":"When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice. --IMDB",
-      "img":"images/the-dark-knight.jpg"
-    },
-    {
-      "title":"GoodFellas",
-      "director": "Martin Scorsese",
-      "actors": ["Robert De Niro", "Samuel L. Jackson", "Joe Pesci"],
-      "year":"1990",
-      "genres":["Thriller","Drama","Crime","Detective","Fiction"],
-      "description":"The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
-      "img":"images/goodfellas.jpg"
+        "_id": 3,
+      "title":"Cannimed Case",
+      "img":"images/fin.png",
+      "tech":["MS Excel", "R", "Stata"],
+      "description":"Recommendations based on financial analysis of a company's state for and IPO.",
+      "modaldetails":"Cannimed Therapeutics (CMED) set themselves up for early success by being the first company (as PPS) to have successfully performed biosynthesis on plants that were being grown in underground copper and zinc mines, which provided the much needed security that the medical cannabis industry requires. They have led the market in pharmaceutical applications of cannabis by offering prescription pain medications that could be dosed through gelcaps, and are now looking to expand their market share potential while expanding their production and processing capabilities by seeking an IPO in order to raise $60 - $70 million.",
+      "schoolyear":"2023",
+      "course":"FINA"
     }
+
   ]
