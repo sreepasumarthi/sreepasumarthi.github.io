@@ -33,7 +33,7 @@ const getMovies = async () => {
     textDiv.append(title);
   
     const tech = document.createElement("p");
-    tech.innerHTML = `<span class="bold">Technologies Used:</span> ${movie.tech}`;
+    tech.innerHTML = `<span class="bold">Technologies Used:</span> ${projects.tech}`;
     textDiv.append(tech);
   
     const actors = document.createElement("p");
