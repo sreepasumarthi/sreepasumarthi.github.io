@@ -1,5 +1,5 @@
 const getMovies = async () => {
-    const url = "https://portiaportia.github.io/json/movies.json";
+    const url = "https://sreepasumarthi.github.io/Projects/Part5/json/projects.json";
   
     try {
       const response = await fetch(url);
@@ -22,7 +22,7 @@ const getMovies = async () => {
     const imgDiv = document.createElement("div");
   
     const image = document.createElement("img");
-    image.src = "https://portiaportia.github.io/json/" + movie.img;
+    image.src = "https://sreepasumarthi.github.io/Projects/Part5/json/projects.json/" + movie.img;
     imgDiv.append(image);
   
     const textDiv = document.createElement("div");
