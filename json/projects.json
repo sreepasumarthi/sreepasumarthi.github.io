@@ -1,8 +1,12 @@
 [
     {
         "_id": 1,
-        "title": "hi",
-        "director": "Francis Ford Coppola",
+        "title": "ER Simulation",
+        "tech": [
+        "MS Excel",
+        "SimQuick",
+        "ProcessModel"
+        ],
         "actors": [
             "Al Pacino",
             "Marlon Brando",
@@ -19,7 +23,7 @@
     },
     {
         "title": "The Shawshank Redemption",
-        "director": "Frank Darabont",
+        "tech": "Frank Darabont",
         "actors": [
             "Morgan Freeman",
             "Bob Gunton",
@@ -37,7 +41,7 @@
     },
     {
         "title": "Pulp Fiction",
-        "director": "Quentin Tarantino",
+        "tech": "Quentin Tarantino",
         "actors": [
             "John Travolta",
             "Bruce Willis",
@@ -53,7 +57,7 @@
     },
     {
         "title": "The Dark Knight",
-        "director": "Christopher Nolan",
+        "tech": "Christopher Nolan",
         "actors": [
             "Christian Bale",
             "Michael Caine",
@@ -73,7 +77,7 @@
     },
     {
         "title": "GoodFellas",
-        "director": "Martin Scorsese",
+        "tech": "Martin Scorsese",
         "actors": [
             "Robert De Niro",
             "Samuel L. Jackson",

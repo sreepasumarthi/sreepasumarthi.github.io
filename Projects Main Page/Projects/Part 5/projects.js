@@ -32,9 +32,9 @@ const getMovies = async () => {
     title.classList.add("bold");
     textDiv.append(title);
   
-    const director = document.createElement("p");
-    director.innerHTML = `<span class="bold">Director:</span> ${movie.director}`;
-    textDiv.append(director);
+    const tech = document.createElement("p");
+    tech.innerHTML = `<span class="bold">tech:</span> ${movie.tech}`;
+    textDiv.append(tech);
   
     const actors = document.createElement("p");
     actors.innerHTML = `<span class="bold">Actors:</span> `;
