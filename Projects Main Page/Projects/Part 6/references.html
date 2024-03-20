@@ -37,36 +37,28 @@
     </div>
 </header>
 <body>
-    <div id="refs">
-        <h1>References</h1>
-        <div class="flex-container">
-            <div class="flex-items">
-                <h2 id="inside">References Will Display Here When Added</h2>
-            </div>
-            <div class="flex-items">
-                <h2><u>Add A Reference</u></h2>
-                <section class="section">
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Relationship</button>
-                        <div class="dropdown-content">
-                            <a>Managed Directly</a>
-                            <a>Managed Indirectly</a>
-                            <a>Worked With</a>
-                        </div>
-                    </div>
-                </section>
-                <input class=input classtype="input" placeholder="Add Reference Text">
-                <div>
-                <p>Submit</p>
-                </div>
-            </div>
-            <div class="flex-items">
-                <h2><u>Remove A Reference</u></h2>
-                <p>Which reference would you like to remove?</p>
-                <input class="input" placeholder="Enter Reference Title">
-                <p>Submit</p>
-            </div>
-         </div>
-    </div>  
+    <body>
+        <div class="container">
+          <h1>Add Reference</h1>
+          <form id="referenceForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="relationship">Relationship:</label>
+            <select id="relationship" name="relationship" required>
+              <option value="">Select Relationship</option>
+              <option value="manager">Manager</option>
+              <option value="colleague">Colleague</option>
+              <!-- Add more options as needed -->
+            </select>
+            <label for="reference">Reference:</label>
+            <textarea id="reference" name="reference" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <div id="successMessage" class="hidden">Reference added successfully!</div>
+          <ul id="referenceList"></ul>
+        </div>
+        
+        <script src="references.js"></script>
+      </body> 
 </body>
 </html>
