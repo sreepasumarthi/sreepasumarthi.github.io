@@ -1,7 +1,7 @@
 
 const getReferences = async () => {
     try {
-        return (await fetch("http://localhost:3070/api/references")).json();
+        return (await fetch("https://sreepasumarthi-github-io.onrender.com/api/references")).json();
     } catch (error) {
         console.log("error retrieving data");
         return "";
@@ -74,7 +74,7 @@ const deleteReferenceMethod = async (reference) => {
         return false;
     }
 
-    let response = await fetch(`http://localhost:3070/api/references/${reference._id}`, {
+    let response = await fetch(`https://sreepasumarthi-github-io.onrender.com/api/references/${reference._id}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json;charset=utf-8"
@@ -152,7 +152,7 @@ const addEditReference = async (e) => {
             //console.log("in add method..." + form.name.value);
             //console.log("in add method..." + form.relationship.value);
             //console.log("in add method..." + form.referenceText.value);
-            response = await fetch("http://localhost:3070/api/references", {
+            response = await fetch("https://sreepasumarthi-github-io.onrender.com/api/references", {
                 method: "POST",
                 body: formData,
             });
@@ -162,7 +162,7 @@ const addEditReference = async (e) => {
         } else { // edit method
             //put request
             console.log("in put");
-            response = await fetch(`http://localhost:3070/api/references/${form._id.value}`, {
+            response = await fetch(`https://sreepasumarthi-github-io.onrender.com/api/references/${form._id.value}`, {
                 method: "PUT",
                 body: formData
             });
