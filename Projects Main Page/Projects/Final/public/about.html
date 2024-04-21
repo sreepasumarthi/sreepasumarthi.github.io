@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="contact.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<header>
+    <div id="logo">
+        <img src="images/Sp (1).jpg">
+    </div>
+    <div id="list">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="underline"><a href="index.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </div>
+    <div class="off-screen-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="this"><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </div>
+    <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<body>
+    <div id="main">
+        <section id="pic">
+            <img src="images/picture-removebg-preview.png">
+        </section>
+        <section id="about">
+            <p id="con"><a id="dis">Hello!</a> I'm Sree Pasumarthi. I'm from Charlotte, NC and currently attend the
+                University of South Carolina. I'm studying Econ, Finance, Supply Chain Management, and CS with a
+                concentration in Data Analytics. I specialize in Python, R, SQL, and C++. I'm graduating in May 2024 and
+                actively seeking full-time opportunities. Please feel free to reach out!</p>
+            <p id="con2">I actively engage on campus, holding leadership roles in student government and various clubs,
+                conducting research in international monetary economics, and serving as a teaching assistant for courses
+                like discrete mathematics for computer science and corporate financial analysis. Additionally, I
+                prioritize community involvement and have established the Silicon Valley Young Coders Club, where I led
+                a boot camp for 50 students, instructing them on software, technology, and entrepreneurship concepts.
+            </p>
+            <p id="con3">Outside of my academic pursuits, I enjoy photography, traveling, and exploring the world of
+                fashion design. Thanks for visiting my website! Hope to connect with you soon.</p>
+            <div class="btn-container">
+                <a class=btn href="resume/Sree Pasumarthi - Resume.pdf" download>View Resume</a>                               
+        </section>
+    </div>
+
+</body>
+<footer>
+    <div class="container">
+        <h3>Contact Me</h3>
+        <div class="columns">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="717598ae-e557-4297-aa1b-eccc5e6ee2a8" />
+                <p>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" placeholder="First and Last" name="name" required />
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" required />
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </p>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                <input type="hidden" name="subject" value="Message from Sree's Portfolio Website" />
+                <input type="hidden" name="from_name" value="My Website" />
+                <p>
+                    <button type="submit">Submit Form</button>
+                </p>
+                <p id="result"></p>
+            </form>
+        </div>
+    </div>
+</footer>
+</html>
