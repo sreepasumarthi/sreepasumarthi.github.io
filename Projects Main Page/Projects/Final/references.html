@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="references.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <header>
+        <h1>References <a href="#" id="add-link">+</a></h1>
+    </header>
+    <div id="reference-list" class="columns">
+        <div id="reference-list-column1" class="column" id="column1"></div>
+        <div id="reference-list-column2" class="column" id="column2"></div>
+        <div id="reference-list-column3" class="column" id="column3"></div>
+        <div id="reference-list-column4" class="column" id="column4"></div>
+    </div>
+    <div id="dialog" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('dialog').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <section id="dialog-details">
+                    <section id="right">
+                        <h2 id="jj">Add/Edit Reference</h2>
+                        <form id="reference-form" method="post" class="hidden">
+                            <input type="hidden" id="_id" name="_id">
+                            <p id="namestuff">
+                                <label for="name">Your Name:</label>
+                                <input type="text" id="name" name="name" minlength="3" required />
+                            </p>
+
+                            <p id="relationshipstff">
+                                <label for="relationship">Relationship:</label>
+                                <select name="relationship" id="cars">
+                                    <option value="Professor">Professor</option>
+                                    <option value="Colleague">Colleague</option>
+                                    <option value="Manager">Manager</option>
+                                </select>
+
+                            </p>
+                            <p>
+                                <label for="company">Company:</label>
+                                <input type="text" id="company" name="company" minlength="3" required />
+                            </p>
+                            <p>
+                                <label for="referenceText">Reference Text:</label>
+                                <textarea id="referenceText" name="referenceText" rows="4" cols="50">
+                                    </textarea>
+                            </p>
+                            <p id="p">
+                                <button type="button" id="cancel-button">Cancel</button>
+                                <button type="submit">Save</button>
+                            <p id="message"></p>
+                            </p>
+                        </form>
+                        <section id="reference-details" class="hidden">
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div id="modelContent" class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content-wrapper">
+                <div class="modal-details">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-relationship"></p>
+                    <p id="modal-company"></p>
+                    <p id="modal-referenceText"></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="references.js"></script>
+</body>
+
+</html>
