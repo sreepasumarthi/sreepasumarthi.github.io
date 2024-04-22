@@ -168,6 +168,7 @@ header {
     background-color: rgb(6, 36, 126);
     ;
     border-radius: 5px;
+    border-color:white 5px;
 }
 
 #languages h1 {
@@ -184,6 +185,7 @@ header {
     background-color: rgb(6, 36, 126);
     color: white;
     border-radius: 5px;
+    border-color:white 5px;
 }
 
 #technologies h1 {
@@ -196,6 +198,7 @@ header {
     background-color: rgb(6, 36, 126);
     ;
     color: white;
+    border-color:white 5px;
     border-radius: 5px;
 }
 
