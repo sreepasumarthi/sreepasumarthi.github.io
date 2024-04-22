@@ -56,6 +56,20 @@ header {
         margin-top: 20px;
     }
 
+    
+    #languages {
+        margin-bottom: 30px;
+    }
+
+    #technologies {
+        margin-bottom: 30px;
+    }
+
+    #certifications {
+        margin-bottom: 30px;
+    }
+
+
 
 }
 
@@ -166,7 +180,7 @@ header {
     width: 350px;
     color: white;
     background-color: rgb(6, 36, 126);
-    ;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
@@ -183,6 +197,7 @@ header {
     width: 350px;
     background-color: rgb(6, 36, 126);
     color: white;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
@@ -194,8 +209,8 @@ header {
 #certifications {
     width: 350px;
     background-color: rgb(6, 36, 126);
-    ;
     color: white;
+    border: 1px solid white;
     border-radius: 5px;
 }
 

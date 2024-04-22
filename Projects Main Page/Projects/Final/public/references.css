@@ -12,12 +12,14 @@ header {
 }
 
 #logo {
-    padding-left: 50px;
-    padding-top:10px;
+    padding-left: 57px;
+    padding-top:7px;
 }
 
 #lis {
-    padding-left: 200px;
+    margin-top:-50px;
+    padding-left: 694px;
+    font-size: medium;
 }
 
 #lis a {
@@ -36,11 +38,14 @@ header {
     text-decoration: underline;
     color: white;
 }
-
+#d {
+    font-weight: 700;
+}
 /*Here*/
 h1 {
+    padding-top:40px;
     color:white;
-    padding-left:20px;
+    padding-left:53px;
 }
 
 body {
@@ -67,11 +72,29 @@ body {
     padding-top:10px;
     padding-bottom:10px;
     padding-left:10px;
+    margin-left:45px;
     padding-right:10px;
     border-radius:10px;
-    border-style: white 5px;
+    border: 2px solid white;
     color:white;
 }
+
+.name-style {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom:10px;
+}
+
+.relationship-style {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.company-style {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
 
 .gallery-item  {
     display: flex;
@@ -120,7 +143,6 @@ body {
 
 .modal-details {
     flex-grow: 1;
-    padding-left: 160px;
 }
 
 .close {
@@ -209,6 +231,27 @@ body {
     margin-right: 10px;
 }
 
+#cancel-button,
+#save-button {
+    background-color: rgb(6, 36, 126);
+    border-radius: 5px;
+    color:white
+}
+
+#name {
+margin-left:10px;
+}
+
+#company {
+    margin-left:20px;
+}
+
+#cars{
+    width:205px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
 #left {
     float: left;
     width: 40%;
@@ -233,6 +276,7 @@ body {
 #jj {
     font-size: x-large;
     margin-left: -20pxpx;
+    font-weight: bold;
 }
 
 #p {
@@ -240,9 +284,10 @@ body {
 }
 
 #name,
-#description,
-#supp {
-    background-color: rgba(97, 9, 97, 0.3);
+#company,
+#referenceText {
+    background-color:  rgb(6, 36, 126,0.3);
+    border-radius:5px;
 }
 
 #add-craft-form {
@@ -259,10 +304,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
-}
-
-#namestuff {
-    margin-left: 38px;
 }
 
 #supplies-p {

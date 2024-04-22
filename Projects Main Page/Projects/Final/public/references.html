@@ -24,7 +24,7 @@
 </header>
 
 <body>
-    <h1>References <a href="#" id="add-link">+</a></h1>
+    <h1 id="d">References <a href="#" id="add-link">+</a></h1>
     <div id="reference-list" class="columns">
         <div id="reference-list-column1" class="column" id="column1"></div>
         <div id="reference-list-column2" class="column" id="column2"></div>
@@ -44,7 +44,10 @@
                                 <label for="name">Your Name:</label>
                                 <input type="text" id="name" name="name" minlength="3" required />
                             </p>
-
+                            <p>
+                                <label for="company">Company:</label>
+                                <input type="text" id="company" name="company" minlength="3" required />
+                            </p>
                             <p id="relationshipstff">
                                 <label for="relationship">Relationship:</label>
                                 <select name="relationship" id="cars">
@@ -54,17 +57,13 @@
                                 </select>
                             </p>
                             <p>
-                                <label for="company">Company:</label>
-                                <input type="text" id="company" name="company" minlength="3" required />
-                            </p>
-                            <p>
                                 <label for="referenceText">Reference Text:</label>
                                 <textarea id="referenceText" name="referenceText" rows="4" cols="50">
                                     </textarea>
                             </p>
                             <p id="p">
                                 <button type="button" id="cancel-button">Cancel</button>
-                                <button type="submit">Save</button>
+                                <button type="submit" id="save-button">Save</button>
                             <p id="message"></p>
                             </p>
                         </form>

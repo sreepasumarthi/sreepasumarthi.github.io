@@ -171,14 +171,17 @@ section {
 }
 
 .projimg {
-  max-height: 250px;
+  height: 250px;
   width: 400px;
+  border-radius: 5px;
 }
 
 #simple {
   text-align: center;
   color: white;
 }
+
+
 
 section {
   background: #1b74cd;

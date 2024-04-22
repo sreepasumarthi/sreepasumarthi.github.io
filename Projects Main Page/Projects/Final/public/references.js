@@ -19,7 +19,7 @@ const displayReferenceModal = (reference) => {
     const modalReferenceText = document.getElementById("modal-referenceText");
     const modelContent = document.getElementById("modelContent");
 
-    modalTitle.innerHTML = `<strong>${reference.name + "," + reference.relationship}  </strong>`;
+    modalTitle.innerHTML = `<strong>${reference.name + ", " + reference.relationship}  </strong>`;
 
     // Add edit and delete buttons next to the Name
     const editLink = document.createElement("a");
@@ -118,15 +118,19 @@ const showReferences = async () => {
       
         const name = document.createElement("p");
         name.textContent = reference.name;
+        name.classList.add("name-style");
         galleryItem.appendChild(name);
-
-        const relationship = document.createElement("p");
-        relationship.textContent = reference.relationship;
-        galleryItem.appendChild(relationship);
 
         const company = document.createElement("p");
         company.textContent = reference.company;
+        company.classList.add("company-style");
         galleryItem.appendChild(company);
+
+        const relationship = document.createElement("p");
+        relationship.textContent = reference.relationship;
+        relationship.classList.add("relationship-style");
+        galleryItem.appendChild(relationship);
+
 
         const referenceText = document.createElement("p");
         referenceText.textContent = reference.referenceText;
