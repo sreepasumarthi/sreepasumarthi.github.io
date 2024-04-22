@@ -165,9 +165,9 @@ header {
 #languages {
     width: 350px;
     color: white;
-    border-style: white 5px;
+    background-color: rgb(6, 36, 126);
+    ;
     border-radius: 5px;
-    border-color: white 10px;
 }
 
 #languages h1 {
@@ -181,10 +181,9 @@ header {
 
 #technologies {
     width: 350px;
-    border-style: white 5px;
+    background-color: rgb(6, 36, 126);
     color: white;
     border-radius: 5px;
-    border-color:white 5px;
 }
 
 #technologies h1 {
@@ -194,9 +193,9 @@ header {
 
 #certifications {
     width: 350px;
-    border-style: white 5px;
+    background-color: rgb(6, 36, 126);
+    ;
     color: white;
-    border-color:white 5px;
     border-radius: 5px;
 }
 
