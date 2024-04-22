@@ -1,3 +1,7 @@
+#h1 {
+    color:white;
+}
+
 body {
     background: rgb(6, 36, 126);
     background: linear-gradient(90deg, rgba(6, 36, 126, 1) 0%, rgba(25, 128, 223, 1) 100%);
