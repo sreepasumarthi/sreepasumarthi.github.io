@@ -310,12 +310,8 @@ margin-left:10px;
     margin-left: 25px;
 }
 
-@media (max-width: 800px) {
+@media screen and (min-width: 768px) {
     #lis {
-        margin-top:-50px;
-        padding-left: 1000px;
-        font-size: medium;
+        padding-left: 20%; /* Adjust this value to your preference */
     }
-
-  }
-
+}
