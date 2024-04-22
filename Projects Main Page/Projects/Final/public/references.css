@@ -5,20 +5,20 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header {
+#hello{
     display: flex;
     justify-content: space-between;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #logo {
-    padding-left: 57px;
-    padding-top:7px;
+    padding-left: 60px;
+    padding-top:10px;
 }
 
 #lis {
-    margin-top:-50px;
-    padding-left: 694px;
+    padding-right: 60px;
+    padding-top:10px;
     font-size: medium;
 }
 
@@ -308,10 +308,4 @@ margin-left:10px;
 
 #supplies-p {
     margin-left: 25px;
-}
-
-@media screen and (min-width: 768px) {
-    #lis {
-        padding-left: 20%; /* Adjust this value to your preference */
-    }
 }
